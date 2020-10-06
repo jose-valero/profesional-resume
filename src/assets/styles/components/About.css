@@ -1,3 +1,12 @@
 .about__container {
-  color: red;
+  height: 150vh;
+  width: 100%;
+  opacity: 1;
+  border:  1px red solid
+}
+
+.about__content {
+  padding: 5rem;
+  margin: 5rem;
+  border: 1px blue solid;
 }

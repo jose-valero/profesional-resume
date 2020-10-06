@@ -4,8 +4,10 @@ import '../assets/styles/App.scss';
 
 const About = () => {
   return (
-    <div className="page about__container">
-      <h1>About Me</h1>
+    <div className="about__container">
+      <div className="about__content">
+        <h1>About Me</h1>
+      </div>
     </div>
   );
 };

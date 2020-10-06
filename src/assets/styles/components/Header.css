@@ -2,11 +2,17 @@
   background-color: #444444;
   box-shadow: 0 0.25rem 0.5rem rgba(52, 58, 64, 0.5);
   color: #eeeedd;
+  
 }
+
+.header__content {
+ justify-content: center !important;
+}
+
 .header__brand {
   text-decoration: none;
   color: #eeeedd;
-  margin-right: 25%;
+  margin-right: 1rem;
   font-size: 18px;
 }
 .header__brand:hover {
@@ -18,10 +24,13 @@
   text-decoration: none;
   color: #eeeedd;
   margin-right: 1.5rem;
+  margin-left: 3rem;
   font-size: 16px;
+
 }
 
 .header__item:hover {
   text-decoration: none;
   color: #559999;
+
 }

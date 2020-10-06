@@ -1,20 +1,20 @@
-// import React from 'react';
-// import '../../assets/styles/components/Footer.css';
-// import '../../assets/styles/App.scss';
+import React from 'react';
+import '../../assets/styles/components/Footer.css';
+import '../../assets/styles/App.scss';
 
-// const Footer = () => {
-//   return (
-//     <div className='footer__container'>
-//       <p>Powered by ME</p>
+const Footer = () => {
+  return (
+    <div className='footer__container'>
+      <p>Powered by ME</p>
 
-//       <p>
-//         Made with{' '}
-//         <span role='img' aria-labelledby="">
-//           💙
-//         </span>
-//       </p>
-//     </div>
-//   );
-// };
+      <p>
+        Made with{' '}
+        <span role='img' aria-labelledby="">
+          💙
+        </span>
+      </p>
+    </div>
+  );
+};
 
-// export default Footer;
+export default Footer;
