@@ -18,9 +18,9 @@ const Header = () => {
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav className=''>
-          <Link className='header__item' to='/contact'>
+          <Link className='header__item' to='/About'>
             {' '}
-            Contact
+            About
           </Link>
           <Link className='header__item' to='/formation'>
             {' '}
@@ -30,15 +30,15 @@ const Header = () => {
             {' '}
             experience
           </Link>
-          <Link className='header__item' to='/spotify'>
+          <Link className='header__item' to='/contact'>
             {' '}
-            Spotify
+            contact
           </Link>
           <Link className='header__item' to='/spotify'>
             {' '}
             Spotify
           </Link>
-          <Link className='header__item' to='/spotify'>
+          <Link className='header__item' to='/resume'>
             {' '}
             Download Resume
           </Link>
