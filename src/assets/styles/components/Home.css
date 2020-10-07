@@ -2,17 +2,33 @@
   background-image: url('../../statics//image/10137.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150vh;
+  height: 100%;
   width: 100%;
   opacity: 1;
 }
 
 .home__content {
-  padding-top: 15%;
-  padding-bottom: 25%;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding: 5% 20% 0 20%;
   color: white;
+}
+.home__content-tittle {
+  font-size: 5.5rem;
+  color: #ccddcc;
+}
+
+.home__content-text {
+  line-height: 4.5rem;
+  color: #ccddcc;
+}
+.home__fotoPerfil {
+  border-radius: 50px;
+  width: 30vh;
+  height: 45vh;
+  opacity: 0.7;
+  display: flex;
+  text-align: center;
+  display: block;
+  margin: 0 auto 5rem auto;
 }
 
 .home__social {
