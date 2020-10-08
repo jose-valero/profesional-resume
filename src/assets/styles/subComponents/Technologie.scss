@@ -1,0 +1,163 @@
+.about__tech {
+  width: 12%;
+  float: left;
+  margin-bottom: 12%;
+  margin-right: 2%;
+}
+
+.about__tech-names {
+  font-size: 0.75rem;
+}
+
+.about__tech-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #eeeedd;
+}
+
+.about__tech-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .about__tech {
+    width: 24%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 12%;
+  }
+
+  .about__tech-names {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .about__tech-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #eeeedd;
+  }
+}
+
+@media (min-width: 320px) and (min-width: 375px) {
+  .about__tech {
+    width: 18%;
+  }
+  .about__tech-names {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .about__tech-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #eeeedd;
+  }
+}
+
+@media (min-width: 375px) and (min-width: 425px) {
+  .about__tech {
+    width: 10%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 12%;
+  }
+  .about__tech-names {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .about__tech-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #eeeedd;
+  }
+}
+
+@media (min-width: 425px) and (min-width: 768px) {
+  .about__tech {
+    width: 10%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 12%;
+  }
+  .about__tech-names {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .about__tech-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #eeeedd;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .about__tech {
+    width: 10%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 12%;
+  }
+  .about__tech-names {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .about__tech-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #eeeedd;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1440px) {
+  .about__tech {
+    width: 10%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 12%;
+  }
+  .about__content-text,
+  p {
+    font-size: 1.5rem;
+  }
+  .about__tech-names {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .about__tech-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #eeeedd;
+  }
+}
+
+@media (min-width: 1444px) and (min-width: 2560px) {
+  .about__tech {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    width: 10%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 12%;
+  }
+
+  .about__tech-names {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about__tech-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #eeeedd;
+  }
+}

@@ -1,0 +1,93 @@
+.about__content-skills {
+  p {
+    margin-bottom: 20px;
+  }
+  .about__title-skills {
+    font-size: 25px;
+    border-bottom: 1px solid #ff2255;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+}
+
+.skill__bar {
+  margin-top: 20px;
+}
+.skill__name {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+  color: #ccddcc;
+}
+.speech-bubble {
+  font-size: 0.75em;
+  line-height: 2em;
+  position: absolute;
+  top: -2.7em;
+  text-align: center;
+  min-width: 3em;
+  border-radius: 0.3em;
+  display: none;
+}
+
+.map {
+  width: 100%;
+  border: none;
+}
+.html {
+  left: calc(90% - 1.5em);
+}
+
+.js {
+  left: calc(50% - 1.5em);
+}
+
+.re {
+  left: calc(40% - 1.5em);
+}
+
+.wp {
+  left: calc(40% - 1.5em);
+}
+
+.speech-bubble:after {
+  border: 0.5em solid transparent;
+  content: '';
+  margin-left: -0.5em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.skill__bar-outer {
+  height: 1em;
+  background: #c2c2c2;
+  position: relative;
+  border-radius: 0.3em;
+}
+
+.bar-inner {
+  width: 0;
+  height: 1em;
+  border-radius: 0.3em;
+}
+
+.ht,
+.html,
+.js,
+.jq,
+.re,
+.rs,
+.wp,
+.wq {
+  background: #ff2255;
+  color: white;
+}
+
+.html:after,
+.js:after,
+.re:after,
+.wp:after {
+  border-top-color: red;
+}

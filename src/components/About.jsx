@@ -1,13 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// import ProgressBar from 'react-bootstrap/ProgressBar';
-import { Skills, Technologies } from './data/Data';
-import Skill from './general/Skill';
-import Technoligie from './general/Technoligie';
-
-// import gitLogo from '../assets/statics/icons/github-tile.svg';
+import Hobbie from './subComponents/Hobbie';
+import Skill from './subComponents/Skill';
+import Technoligie from './subComponents/Technoligie';
+import { Skills, Technologies, Hobbies } from './data/Data';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 import '../assets/styles/components/About.scss';
+import '../assets/styles/subComponents/Technologie.scss';
+import '../assets/styles/subComponents/Skill.scss';
+import '../assets/styles/subComponents/Hobbie.scss';
 import '../assets/styles/App.scss';
 
 import AOS from 'aos';
@@ -20,9 +22,14 @@ class About extends React.Component {
     if (langReducer === 'ES') {
       return (
         <>
-          <div className=' about__container'>
-            <div className='about__content '>
-              <div className='row  about__content-text m-3'>
+          <div className='about__container'>
+            <CardGroup className='about__cardGroup'>
+              {Hobbies.map((hobbi) => (
+                <Hobbie key={hobbi.id} {...hobbi} />
+              ))}
+            </CardGroup>
+            <div className='about__content'>
+              <div className='row about__content-text m-3'>
                 <p>
                   Desde ya un año me comprometi a realizar un cambio rotundo
                   hacia el mundo de la Programacion y Desarrollo, Me considero
@@ -33,27 +40,23 @@ class About extends React.Component {
                 </p>
               </div>
 
-              <div className='row'>
-                <div className='col text-center  mx-1'>
-                  <div className='about__skill-container'>
-                    <div className='col-12 col-md-4 col-lg-6'>
-                      <i className='icon-diamond' />
-                      <h4 className='title-skills'>Skills</h4>
-                      {Skills.map((skill) => (
-                        <Skill key={skill.id} {...skill} />
-                      ))}
-                    </div>
+              <div className='about__content-skills row'>
+                <div className='col-12 col-md-6 col-lg-6 my-2'>
+                  <div className='col-12 col-md col-lg-8'>
+                    <h4 className='about__title-skills'>Skills</h4>
+                    {Skills.map((skill) => (
+                      <Skill key={skill.id} {...skill} />
+                    ))}
                   </div>
                 </div>
 
-                <div className='col text-left border mx-1'>
-                  <div>
-                    <p className='about__content-text'>
-                      Las tecnologias, herramientas y lenguajes que he podido
-                      tocar durante este periodo de tiempo son
+                <div className='col-12 col-md-6 col-lg-6 d-flex my-4'>
+                  <div className='about__tech-container'>
+                    <p className='about__tech-title'>
+                      Tecnologias y herramientas
                     </p>
                     {Technologies.map((tech) => (
-                      <Technoligie key={tech.id} {...tech} />
+                      <Technoligie key={tech.id} {...tech} className='' />
                     ))}
                   </div>
                 </div>

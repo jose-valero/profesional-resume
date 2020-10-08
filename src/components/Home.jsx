@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import gitLogo from '../assets/statics/icons/github-tile.svg';
 import linkedinLogo from '../assets/statics/icons/linkedin-tile.svg';
 import twitterLogo from '../assets/statics/icons/twitter-official.svg';
-import sourcererLogo from '../assets/statics/icons/sourcerer.png';
+import sourcererLogo from '../assets/statics/icons/icon-sourcerer.png';
 import fotoPerfil from '../assets/statics/image/profile-foto-2.png';
 import '../assets/styles/components/Home.css';
 import '../assets/styles/App.scss';
