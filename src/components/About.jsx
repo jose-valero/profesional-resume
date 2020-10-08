@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 // import ProgressBar from 'react-bootstrap/ProgressBar';
-import { Skills } from './data/Data';
+import { Skills, Technologies } from './data/Data';
 import Skill from './general/Skill';
+import Technoligie from './general/Technoligie';
 
-import gitLogo from "../assets/statics/icons/github-tile.svg"
+// import gitLogo from '../assets/statics/icons/github-tile.svg';
 
 import '../assets/styles/components/About.scss';
 import '../assets/styles/App.scss';
@@ -47,16 +48,13 @@ class About extends React.Component {
 
                 <div className='col text-left border mx-1'>
                   <div>
-                    <p className="about__content-text">
+                    <p className='about__content-text'>
                       Las tecnologias, herramientas y lenguajes que he podido
                       tocar durante este periodo de tiempo son
                     </p>
-                    <img src={gitLogo} alt="git" className="about__tech-logo"/>
-                    <img src={gitLogo} alt="git" className="about__tech-logo"/>
-                    <img src={gitLogo} alt="git" className="about__tech-logo"/>
-                    <img src={gitLogo} alt="git" className="about__tech-logo"/>
-                    <img src={gitLogo} alt="git" className="about__tech-logo"/>
-
+                    {Technologies.map((tech) => (
+                      <Technoligie key={tech.id} {...tech} />
+                    ))}
                   </div>
                 </div>
               </div>
