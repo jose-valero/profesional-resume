@@ -117,6 +117,8 @@ export const Hobbies = [
     title: 'Gaming',
     bodyText:
       'desde muy chico apasionado con los deportes y tambien por los video juegos, suelo jugar mas juegos de PC, no tanto en consola y me gusta mucho jugar al ajedrez',
+    bodyTextEnglish:
+      'since very young I am passionate about sports and also about video games, I usually play more PC games, not so much on the console and I like very much to play chess',
     image:
       'https://cdn.pixabay.com/photo/2016/02/22/09/44/chess-1215079_960_720.jpg',
     footerText: 'Isnt About Gaming, its About Passion',
@@ -125,7 +127,9 @@ export const Hobbies = [
     id: 'id_hobbie-movie',
     title: 'Movie',
     bodyText:
-      'Ridiculamente fanatico del cine y mas que todo de la Ciencia Ficcion, de esos que disfruta el cine en todo su explendor. Trato de en mi tiempo libre ver alguna Pelicula o Serie ',
+      'Ridículamente fanático del cine y mas que todo de la Ciencia Ficción, de esos que disfruta el cine en todo su esplendor. Trato de en mi tiempo libre ver alguna Película o Serie ',
+    bodyTextEnglish:
+      'Ridiculously fan about movies and mostly about SciFi, the kind that enjoys movies in all their splendor. I try in my free time to see some film or series',
     image:
       'https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655__340.jpg',
     footerText: '"Im Gonna Make Him An Offer He Cant Refuse." - Vito Corleone',
@@ -135,13 +139,17 @@ export const Hobbies = [
     title: 'Learning',
     bodyText:
       'En mis comienzos formales con Mindhub y luego con Platzi, Gran plataforma que me brinda la mejor opcion para volverme profesional.',
+      bodyTextEnglish:
+      'In my formal beginnings with Mindhub and then with Platzi, Great platform that gives me the best option to become a professional.',
     image: require('../../assets/statics/image/platzi.jpg'),
-    footerText: 'NUNCA PARES DE APRENDER!!',
+    footerText: 'NEVER STOP LEARNING!!',
   },
   {
     id: 'id_hobbie-spotify',
     title: 'Spotify',
     bodyText: 'Spotify',
+    bodyTextEnglish:
+    'asd',
     image:
       'https://images.unsplash.com/photo-1504509546545-e000b4a62425?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
     footerText: 'asd',

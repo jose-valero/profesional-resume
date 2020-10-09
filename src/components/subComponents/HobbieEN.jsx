@@ -3,7 +3,7 @@ import AOS from 'aos';
 import Card from 'react-bootstrap/Card';
 import '../../assets/styles/subComponents/Hobbie.scss';
 
-const Hobbie = ({ title, bodyText, image, footerText }) => {
+const HobbieEN = ({ title, bodyTextEnglish, image, footerText }) => {
   AOS.init();
 
   return (
@@ -15,7 +15,7 @@ const Hobbie = ({ title, bodyText, image, footerText }) => {
       />
       <Card.Body className='hobbie__card-body'>
         <Card.Title>{title}</Card.Title>
-        <Card.Text className='hobbie__body-text'>{bodyText}</Card.Text>
+        <Card.Text className='hobbie__body-text'>{bodyTextEnglish}</Card.Text>
       </Card.Body>
       <Card.Footer className='hobbie__footer-body'>
         <small>{footerText} </small>
@@ -24,4 +24,4 @@ const Hobbie = ({ title, bodyText, image, footerText }) => {
   );
 };
 
-export default Hobbie;
+export default HobbieEN;

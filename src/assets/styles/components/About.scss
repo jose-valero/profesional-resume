@@ -1,7 +1,8 @@
 .about__container {
   background-image: url('../../statics/image/5086.jpg');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat center center fixed;
   background-size: cover;
+  background-position: right bottom;
   height: 100%;
   width: 100%;
 }
@@ -17,7 +18,22 @@ p {
   font-size: 1rem;
 }
 
-@media (min-width: 1444px) and (min-width: 2560px) {
+@media (min-width: 768px) and (max-width: 1560px) {
+  .about__container {
+    height: 120vh;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1560px) {
+  .about__container {
+    height: 160vh;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1444px) and (max-width: 2560px) {
   .about__container {
     height: 100%;
     width: 100%;
