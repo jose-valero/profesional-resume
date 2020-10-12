@@ -1,8 +1,10 @@
 .about__container {
   background-image: url('../../statics/image/5086.jpg');
-  background-repeat: no-repeat center center fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: right bottom;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100%;
   width: 100%;
 }

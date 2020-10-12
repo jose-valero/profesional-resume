@@ -61,7 +61,7 @@ class Header extends React.Component {
               About
             </Link>
             <Link className='header__item' to='/formation'>
-              formation
+              Education
             </Link>
             <Link className='header__item' to='/experience'>
               experience

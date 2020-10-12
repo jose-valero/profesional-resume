@@ -7,6 +7,8 @@ import sourcererLogo from '../assets/statics/icons/icon-sourcerer.png';
 import fotoPerfil from '../assets/statics/image/profile-foto-2.png';
 import '../assets/styles/components/Home.css';
 import '../assets/styles/App.scss';
+import { Personal_Social } from './data/Data';
+import Social from '../components/subComponents/Social';
 
 class Home extends React.Component {
   render() {
@@ -31,50 +33,9 @@ class Home extends React.Component {
                 el desarrollo Frontend o simplemente jugar algunos video juegos
               </h3>
               <div className='home__social d-flex justify-content-center'>
-                <a
-                  href='https://www.linkedin.com/in/josemiguelvalero/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    className='home__social-icon'
-                    src={linkedinLogo}
-                    alt='Linkedin'
-                  />
-                </a>
-                <a
-                  href='https://github.com/jose-valero'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    className='home__social-icon'
-                    src={gitLogo}
-                    alt='GitHub'
-                  />
-                </a>
-                <a
-                  href='https://twitter.com/JMiguelValero'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    className='home__social-icon'
-                    src={twitterLogo}
-                    alt='Twitter'
-                  />
-                </a>
-                <a
-                  href='https://sourcerer.io/jose-valero'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    className='home__social-icon'
-                    src={sourcererLogo}
-                    alt='sourcerer'
-                  />
-                </a>
+                {Personal_Social.map((rs) => (
+                  <Social key={rs.id} {...rs} />
+                ))}
               </div>
             </div>
           </div>

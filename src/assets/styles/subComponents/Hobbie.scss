@@ -16,6 +16,7 @@
 .hobbie__cards {
   margin-right: 10px;
   opacity: 0.75;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(255, 34, 86, 0.172);
 }
 
 .hobbie__cards {
@@ -88,7 +89,7 @@
   }
 }
 
-@media (min-width: 1524px)  {
+@media (min-width: 1524px) {
   .hobbie__cards {
     margin-right: 4rem;
   }
@@ -103,5 +104,3 @@
     }
   }
 }
-
-

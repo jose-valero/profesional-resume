@@ -1,3 +1,26 @@
+export const Personal_Social = [
+  {
+    id: 'id_personal_social-linkedin',
+    img: require('../../assets/statics/icons/linkedin-tile.svg'),
+    website: 'https://www.linkedin.com/in/josemiguelvalero/',
+  },
+  {
+    id: 'id_personal_social-github',
+    img: require('../../assets/statics/icons/github-tile.svg'),
+    website: 'https://github.com/jose-valero',
+  },
+  {
+    id: 'id_personal_social-twitter',
+    img: require('../../assets/statics/icons/twitter-official.svg'),
+    website: 'https://twitter.com/JMiguelValero',
+  },
+  {
+    id: 'id_personal_social-sourcerer',
+    img: require('../../assets/statics/icons/icon-sourcerer.png'),
+    website: 'https://sourcerer.io/jose-valero',
+  },
+];
+
 export const Skills = [
   {
     id: 'id_basis-html/css/',
@@ -139,7 +162,7 @@ export const Hobbies = [
     title: 'Learning',
     bodyText:
       'En mis comienzos formales con Mindhub y luego con Platzi, Gran plataforma que me brinda la mejor opcion para volverme profesional.',
-      bodyTextEnglish:
+    bodyTextEnglish:
       'In my formal beginnings with Mindhub and then with Platzi, Great platform that gives me the best option to become a professional.',
     image: require('../../assets/statics/image/platzi.jpg'),
     footerText: 'NEVER STOP LEARNING!!',
@@ -148,10 +171,58 @@ export const Hobbies = [
     id: 'id_hobbie-spotify',
     title: 'Spotify',
     bodyText: 'Spotify',
-    bodyTextEnglish:
-    'asd',
+    bodyTextEnglish: 'asd',
     image:
       'https://images.unsplash.com/photo-1504509546545-e000b4a62425?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
     footerText: 'asd',
+  },
+];
+
+export const Educations = [
+  {
+    id: 'id_edu-usm',
+    title: 'usm',
+    text: 'Hola Soy USM',
+    footerText: 'desdde el 2012 al 2017',
+    img: require('../../assets/statics/image/usm_vzla.jpg'),
+    logo: require('../../assets/statics/icons/web.svg'),
+    web: 'https://usm.edu.ve/florencia/',
+    rs_link_icon: require('../../assets/statics/icons/linkedin-tile.svg'),
+    rs_tw_icon: require('../../assets/statics/icons/twitter-official.svg'),
+    rs_ig_icon: require('../../assets/statics/icons/icon-instagram.svg'),
+    rs_link_web:
+      "https://www.linkedin.com/school/universidad-'santa-mar%C3%ADa'/",
+    rs_tw_web: 'https://twitter.com/usm_vzla',
+    rs_ig_web: 'https://www.instagram.com/usm_vzla/',
+  },
+  {
+    id: 'id_edu-mindhub',
+    title: 'MindHub / Inet',
+    text: 'Hola Soy Mindhub',
+    footerText: 'desde Agosto 2019 hasta Diciembre 2019',
+    img: require('../../assets/statics/image/mindhub.jpg'),
+    logo: require('../../assets/statics/icons/web.svg'),
+    web: 'https://mindhubweb.com/',
+    rs_link_icon: require('../../assets/statics/icons/linkedin-tile.svg'),
+    rs_tw_icon: require('../../assets/statics/icons/twitter-official.svg'),
+    rs_ig_icon: require('../../assets/statics/icons/icon-instagram.svg'),
+    rs_link_web: 'https://www.linkedin.com/school/mindhub-la/',
+    rs_tw_web: 'https://twitter.com/MINDhubMx',
+    rs_ig_web: 'https://www.instagram.com/mindhub_la/',
+  },
+  {
+    id: 'id_edu-platzi',
+    title: 'platzi',
+    text: '',
+    footerText: 'desde 2018 a la Actualidad',
+    img: '',
+    logo: require('../../assets/statics/icons/web.svg'),
+    web: 'https://platzi.com/',
+    rs_link_icon: require('../../assets/statics/icons/linkedin-tile.svg'),
+    rs_tw_icon: require('../../assets/statics/icons/twitter-official.svg'),
+    rs_ig_icon: require('../../assets/statics/icons/icon-instagram.svg'),
+    rs_link_web: 'https://www.linkedin.com/school/platzi-inc/',
+    rs_tw_web: 'https://twitter.com/platzi',
+    rs_ig_web: 'https://www.instagram.com/platzi/',
   },
 ];
