@@ -164,27 +164,18 @@ export const Hobbies = [
       'En mis comienzos formales con Mindhub y luego con Platzi, Gran plataforma que me brinda la mejor opcion para volverme profesional.',
     bodyTextEnglish:
       'In my formal beginnings with Mindhub and then with Platzi, Great platform that gives me the best option to become a professional.',
-    image: require('../../assets/statics/image/platzi.jpg'),
+    image: require('../../assets/statics/image/platzi_2.webp'),
     footerText: 'NEVER STOP LEARNING!!',
-  },
-  {
-    id: 'id_hobbie-spotify',
-    title: 'Spotify',
-    bodyText: 'Spotify',
-    bodyTextEnglish: 'asd',
-    image:
-      'https://images.unsplash.com/photo-1504509546545-e000b4a62425?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-    footerText: 'asd',
   },
 ];
 
 export const Educations = [
   {
     id: 'id_edu-usm',
-    title: 'usm',
-    text: 'Hola Soy USM',
-    footerText: 'desdde el 2012 al 2017',
-    img: require('../../assets/statics/image/usm_vzla.jpg'),
+    title: 'Academico',
+    text: 'Licenciado en Contaduria Publica',
+    footerText: 'Desde el 2012 al 2017',
+    img: require('../../assets/statics/image/universidad.jpg'),
     logo: require('../../assets/statics/icons/web.svg'),
     web: 'https://usm.edu.ve/florencia/',
     rs_link_icon: require('../../assets/statics/icons/linkedin-tile.svg'),
@@ -197,9 +188,10 @@ export const Educations = [
   },
   {
     id: 'id_edu-mindhub',
-    title: 'MindHub / Inet',
-    text: 'Hola Soy Mindhub',
-    footerText: 'desde Agosto 2019 hasta Diciembre 2019',
+    title: 'BootCamp',
+    text:
+      'Becado, Bootcamp de Desarrollo FullStack',
+    footerText: 'Desde Ago-19 hasta Dic-19',
     img: require('../../assets/statics/image/mindhub.jpg'),
     logo: require('../../assets/statics/icons/web.svg'),
     web: 'https://mindhubweb.com/',
@@ -212,10 +204,10 @@ export const Educations = [
   },
   {
     id: 'id_edu-platzi',
-    title: 'platzi',
-    text: '',
-    footerText: 'desde 2018 a la Actualidad',
-    img: '',
+    title: 'Autodidacta',
+    text: 'Carrera Frontend con Vue y React',
+    footerText: 'Desde 2018 a la Actualidad',
+    img: require('../../assets/statics/image/platzi_7.png'),
     logo: require('../../assets/statics/icons/web.svg'),
     web: 'https://platzi.com/',
     rs_link_icon: require('../../assets/statics/icons/linkedin-tile.svg'),
@@ -226,3 +218,36 @@ export const Educations = [
     rs_ig_web: 'https://www.instagram.com/platzi/',
   },
 ];
+
+export const Certifications = [
+  {
+    id: "id_cert-mindhub",
+    name: "BootCamp FullStack",
+    diploma: require("../../assets/statics/docs/mindhub_certificacion_1.png"),
+    link: "https://mindhubweb.com/cursos/full-stack-desarrollo-web/"
+  },
+  {
+    id: "id_cert-react_1",
+    name: "React JS",
+    diploma: require("../../assets/statics/docs/diploma-react-ejs_1.png"),
+    link: "https://platzi.com/@jose-miguel-valero-reyes/curso/1651-react-ejs/diploma/detalle/"
+  },
+  {
+    id: "id_cert-react_2",
+    name: "React Router-Redux",
+    diploma: require("../../assets/statics/docs/diploma-react-router-redux_1.png"),
+    link: "https://platzi.com/@jose-miguel-valero-reyes/curso/1652-react-router-redux/diploma/detalle/"
+  },
+  {
+    id: "id_cert-react_3",
+    name: "Reactjs",
+    diploma: require("../../assets/statics/docs/diploma-react_1.png"),
+    link: "https://platzi.com/@jose-miguel-valero-reyes/curso/1548-react/diploma/detalle/"
+  },
+  {
+    id: "id_cert-react_4",
+    name: "React Redux",
+    diploma: require("../../assets/statics/docs/diploma-redux_1.png"),
+    link: "https://platzi.com/@jose-miguel-valero-reyes/curso/1613-redux/diploma/detalle/"
+  },
+]

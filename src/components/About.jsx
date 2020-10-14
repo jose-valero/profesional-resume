@@ -99,9 +99,7 @@ class About extends React.Component {
 
                 <div className='col-12 col-md-6 col-lg-6 d-flex my-4'>
                   <div className='about__tech-container'>
-                    <p className='about__tech-title'>
-                      Tools and Technologies
-                    </p>
+                    <p className='about__tech-title'>Tools and Technologies</p>
                     {Technologies.map((tech) => (
                       <Technoligie key={tech.id} {...tech} className='' />
                     ))}

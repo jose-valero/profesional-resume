@@ -11,12 +11,15 @@
 
 .hobbie__cards:hover {
   opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(4, 0, 34, 0.796);
+  animation-name: example;
+  animation-duration: 0.25s;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .hobbie__cards {
   margin-right: 10px;
   opacity: 0.75;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(255, 34, 86, 0.172);
 }
 
 .hobbie__cards {

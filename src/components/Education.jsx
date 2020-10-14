@@ -1,39 +1,55 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import School from './subComponents/School';
-import { Educations } from './data/Data';
-import CardDeck from 'react-bootstrap/CardDeck';
-import '../assets/styles/App.scss';
-import '../assets/styles/components/Formation.scss';
 
-class Formation extends React.Component {
+import AOS from 'aos';
+
+import 'aos/dist/aos.css';
+import '../assets/styles/App.scss';
+import '../assets/styles/components/Education.scss';
+import { Certifications, Educations } from './data/Data';
+import School from './subComponents/School';
+import Diploma from './subComponents/Diploma';
+
+class Education extends React.Component {
   render() {
+    AOS.init();
     const langReducer = this.props.langReducer;
     if (langReducer === 'ES') {
       return (
-        <>
-          <div className='formation__container'>
-            <div className='formation__title'>
-              <h1>Formacion Profesional</h1>
+        <div className='education__container'>
+          <div className='education__title'>
+            <h1>Formación Académica</h1>
+          </div>
+          <div className='education__content'>
+            <div className='education__content-title'>
+              <h1>Catergorias</h1>
             </div>
-            <div className='formation__content row'>
-              <CardDeck>
-                {Educations.map((edu) => (
-                  <School key={edu.id} {...edu} />
-                ))}
-              </CardDeck>
+            <div className='education__row-1'>
+              {Educations.map((edu) => (
+                <School key={edu.id} {...edu} />
+              ))}
+            </div>
+            <div className='education__row-2'>
+              <div>
+                <h3>Certificaciones</h3>
+                <div>
+                  {Certifications.map((cert) => (
+                    <Diploma key={cert.id} {...cert} />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
-        </>
+        </div>
       );
     } else {
       return (
         <>
-          <div className='formation__container'>
-            <div className='formation__title'>
-              <h1>Formation</h1>
+          <div className='education__container'>
+            <div className='Education__title'>
+              <h1>Education</h1>
             </div>
-            <div className='row formation__content'>
+            <div className='row education__content'>
               <div className='col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12'>
                 <h1>Content1</h1>
               </div>
@@ -57,4 +73,4 @@ const mapStateToprops = (state) => {
   };
 };
 
-export default connect(mapStateToprops, {})(Formation);
+export default connect(mapStateToprops, {})(Education);
