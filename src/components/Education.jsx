@@ -16,7 +16,12 @@ class Education extends React.Component {
     const langReducer = this.props.langReducer;
     if (langReducer === 'ES') {
       return (
-        <div className='education__container'>
+        <div
+          className='education__container'
+          data-aos='fade-down'
+          data-aos-easing='linear'
+          data-aos-duration='650'
+        >
           <div className='education__title'>
             <h1>Formación Académica</h1>
           </div>
@@ -30,13 +35,13 @@ class Education extends React.Component {
               ))}
             </div>
             <div className='education__row-2'>
-              <div>
-                <h3>Certificaciones</h3>
-                <div>
-                  {Certifications.map((cert) => (
-                    <Diploma key={cert.id} {...cert} />
-                  ))}
-                </div>
+              <h3>Certificaciones</h3>
+              <div className='education__diploma-container'>
+                {Certifications.map((cert) => (
+                  <div className='diploma__container-item ' key={cert.id}>
+                    <Diploma {...cert} />
+                  </div>
+                ))}
               </div>
             </div>
           </div>

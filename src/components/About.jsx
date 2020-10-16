@@ -23,7 +23,12 @@ class About extends React.Component {
     if (langReducer === 'ES') {
       return (
         <>
-          <div className='about__container'>
+          <div
+            className='about__container'
+            data-aos='fade-down'
+            data-aos-easing="linear"
+            data-aos-duration="650"
+          >
             <CardGroup className='about__cardGroup'>
               {Hobbies.map((hobbi) => (
                 <Hobbie key={hobbi.id} {...hobbi} />

@@ -5,7 +5,8 @@ import { Navbar, Nav } from 'react-bootstrap/';
 import Button from 'react-bootstrap/Button';
 
 import { lanSelect } from '../../actions';
-import '../../assets/styles/components/Header.css';
+import '../../assets/styles/components/Header.scss';
+
 
 class Header extends React.Component {
   render() {
@@ -57,22 +58,22 @@ class Header extends React.Component {
         <Navbar.Toggle aria-controls='responsive-navbar-nav' className='' />
         <Navbar.Collapse id='responsive-navbar-nav' className='header__content'>
           <Nav className='mx-auto'>
-            <Link className='header__item' to='/About'>
+            <Link className='effect slide-up header__item' to='/About'>
               About
             </Link>
-            <Link className='header__item' to='/formation'>
+            <Link className='effect slide-up header__item' to='/education'>
               Education
             </Link>
-            <Link className='header__item' to='/experience'>
-              experience
+            <Link className='effect slide-up header__item' to='/portafolio'>
+              Portafolio
             </Link>
-            <Link className='header__item' to='/contact'>
+            <Link className='effect slide-up header__item' to='/contact'>
               contact
             </Link>
-            <Link className='header__item' to='/spotify'>
-              Spotify
+            <Link className='effect slide-up header__item' to='/game'>
+              relax spot
             </Link>
-            <Link className='header__item' to='/resume'>
+            <Link className='effect slide-up header__item' to='/resume'>
               Download Resume
             </Link>
           </Nav>

@@ -189,8 +189,7 @@ export const Educations = [
   {
     id: 'id_edu-mindhub',
     title: 'BootCamp',
-    text:
-      'Becado, Bootcamp de Desarrollo FullStack',
+    text: 'Becado, Bootcamp de Desarrollo FullStack',
     footerText: 'Desde Ago-19 hasta Dic-19',
     img: require('../../assets/statics/image/mindhub.jpg'),
     logo: require('../../assets/statics/icons/web.svg'),
@@ -221,33 +220,88 @@ export const Educations = [
 
 export const Certifications = [
   {
-    id: "id_cert-mindhub",
-    name: "BootCamp FullStack",
-    diploma: require("../../assets/statics/docs/mindhub_certificacion_1.png"),
-    link: "https://mindhubweb.com/cursos/full-stack-desarrollo-web/"
+    id: 'id_cert-mindhub',
+    name: 'BootCamp',
+    diploma: require('../../assets/statics/docs/mindhub_certificacion_1.png'),
+    link: 'https://mindhubweb.com/cursos/full-stack-desarrollo-web/',
   },
   {
-    id: "id_cert-react_1",
-    name: "React JS",
-    diploma: require("../../assets/statics/docs/diploma-react-ejs_1.png"),
-    link: "https://platzi.com/@jose-miguel-valero-reyes/curso/1651-react-ejs/diploma/detalle/"
+    id: 'id_cert-react_1',
+    name: 'React JS',
+    diploma: require('../../assets/statics/docs/diploma-react-ejs_1.png'),
+    link:
+      'https://platzi.com/@jose-miguel-valero-reyes/curso/1651-react-ejs/diploma/detalle/',
   },
   {
-    id: "id_cert-react_2",
-    name: "React Router-Redux",
-    diploma: require("../../assets/statics/docs/diploma-react-router-redux_1.png"),
-    link: "https://platzi.com/@jose-miguel-valero-reyes/curso/1652-react-router-redux/diploma/detalle/"
+    id: 'id_cert-react_2',
+    name: 'Router-Redux',
+    diploma: require('../../assets/statics/docs/diploma-react-router-redux_1.png'),
+    link:
+      'https://platzi.com/@jose-miguel-valero-reyes/curso/1652-react-router-redux/diploma/detalle/',
   },
   {
-    id: "id_cert-react_3",
-    name: "Reactjs",
-    diploma: require("../../assets/statics/docs/diploma-react_1.png"),
-    link: "https://platzi.com/@jose-miguel-valero-reyes/curso/1548-react/diploma/detalle/"
+    id: 'id_cert-react_3',
+    name: 'Reactjs',
+    diploma: require('../../assets/statics/docs/diploma-react_1.png'),
+    link:
+      'https://platzi.com/@jose-miguel-valero-reyes/curso/1548-react/diploma/detalle/',
   },
   {
-    id: "id_cert-react_4",
-    name: "React Redux",
-    diploma: require("../../assets/statics/docs/diploma-redux_1.png"),
-    link: "https://platzi.com/@jose-miguel-valero-reyes/curso/1613-redux/diploma/detalle/"
+    id: 'id_cert-react_4',
+    name: 'React Redux',
+    diploma: require('../../assets/statics/docs/diploma-redux_1.png'),
+    link:
+      'https://platzi.com/@jose-miguel-valero-reyes/curso/1613-redux/diploma/detalle/',
   },
-]
+];
+
+export const Projects = [
+  {
+    id: 'id_projects-1',
+    name: 'pro_1',
+    date: '2021',
+    desc: 'asd',
+    repo: '',
+    deploy: '',
+  },
+  {
+    id: 'id_projects-2',
+    name: 'pro_2',
+    date: '2022',
+    desc: 'asd',
+    repo: '',
+    deploy: '',
+  },
+  {
+    id: 'id_projects-3',
+    name: 'pro_3',
+    date: '2020',
+    desc: 'asd',
+    repo: '',
+    deploy: '',
+  },
+  {
+    id: 'id_projects-4',
+    name: 'pro_4',
+    date: '2020',
+    desc: 'asd',
+    repo: '',
+    deploy: '',
+  },
+  {
+    id: 'id_projects-5',
+    name: 'pro_5',
+    date: '2020',
+    desc: 'asd',
+    repo: '',
+    deploy: '',
+  },
+  {
+    id: 'id_projects-6',
+    name: 'pro_6',
+    date: '2020',
+    desc: 'asd',
+    repo: '',
+    deploy: '',
+  },
+];

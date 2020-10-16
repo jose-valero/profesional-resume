@@ -1,5 +1,3 @@
-
-
 $(document).on('scroll', function () {
   var skills = {
     ht: 90,

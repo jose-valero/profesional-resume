@@ -1,16 +1,75 @@
-.diploma__container {
-  img {
-    justify-content: center;
-    width: 70%;
-    height: auto;
-    text-align: center;
+@media (min-width: 220px) and (max-width: 768px) {
+  .diploma__container-item {
+    img {
+      justify-content: center;
+      width: 90%;
+      height: auto;
+      text-align: center;
+      transition: transform 0.5s ease;
+    }
+    img:hover {
+      transform: scale(1.5);
+    }
+  }
+  .diploma__container-item {
+    h5 {
+      padding: 0;
+      margin: 2.5rem 0 0 0;
+      text-align: left;
+      font-size: 1rem;
+      border-bottom: 2px rgba(255, 0, 0, 0.83) solid;
+    }
   }
 }
-.diploma__container {
-  h5 {
-    margin-top: 2.5rem;
-    text-align: left;
-    border-bottom: 1px black solid;
-    font-size: 2.25rem;
+
+@media (min-width: 765.98px) and (max-width: 1123.98px) {
+  .diploma__container-item {
+    img {
+      justify-content: center;
+      width: 90%;
+      height: auto;
+      text-align: center;
+      transition: transform 0.5s ease;
+    }
+    img:hover {
+      transform: scale(1.5);
+    }
+  }
+  .diploma__container-item {
+    h5 {
+      padding: 0;
+      margin: 2.5rem 0 0 0;
+      text-align: left;
+      font-size: 1rem;
+      border-bottom: 2px rgba(255, 0, 0, 0.83) solid;
+    }
+  }
+}
+
+@media (min-width: 1124px) {
+  .diploma__container-item {
+    h5 {
+      margin-top: 0.5rem;
+      text-align: center;
+      border-bottom: 2px rgba(255, 0, 0, 0.83) solid;
+      font-size: 1.5rem;
+    }
+    img {
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin: 1rem;
+      padding: 1rem;
+      transition: transform 0.7s, filter 1.5s ease-in-out;
+      transform-origin: center center;
+      filter: brightness(70%);
+      z-index: 1;
+    }
+    img:hover {
+      filter: brightness(100%);
+      transform: scale(1.5);
+      z-index: 0;
+    }
   }
 }
