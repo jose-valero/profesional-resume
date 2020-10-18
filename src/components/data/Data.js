@@ -1,22 +1,22 @@
 export const Personal_Social = [
   {
     id: 'id_personal_social-linkedin',
-    img: require('../../assets/statics/icons/linkedin-tile.svg'),
+    img: require('../../assets/statics/icons/icons8-linkedin-circled.svg'),
     website: 'https://www.linkedin.com/in/josemiguelvalero/',
   },
   {
     id: 'id_personal_social-github',
-    img: require('../../assets/statics/icons/github-tile.svg'),
+    img: require('../../assets/statics/icons/icons8-github.svg'),
     website: 'https://github.com/jose-valero',
   },
   {
     id: 'id_personal_social-twitter',
-    img: require('../../assets/statics/icons/twitter-official.svg'),
+    img: require('../../assets/statics/icons/icons8-twitter-circled.svg'),
     website: 'https://twitter.com/JMiguelValero',
   },
   {
     id: 'id_personal_social-sourcerer',
-    img: require('../../assets/statics/icons/icon-sourcerer.png'),
+    img: require('../../assets/statics/icons/icon-sourcerer.svg'),
     website: 'https://sourcerer.io/jose-valero',
   },
 ];
@@ -178,9 +178,7 @@ export const Educations = [
     img: require('../../assets/statics/image/universidad.jpg'),
     logo: require('../../assets/statics/icons/web.svg'),
     web: 'https://usm.edu.ve/florencia/',
-    rs_link_icon: require('../../assets/statics/icons/linkedin-tile.svg'),
-    rs_tw_icon: require('../../assets/statics/icons/twitter-official.svg'),
-    rs_ig_icon: require('../../assets/statics/icons/icon-instagram.svg'),
+
     rs_link_web:
       "https://www.linkedin.com/school/universidad-'santa-mar%C3%ADa'/",
     rs_tw_web: 'https://twitter.com/usm_vzla',
@@ -194,9 +192,7 @@ export const Educations = [
     img: require('../../assets/statics/image/mindhub.jpg'),
     logo: require('../../assets/statics/icons/web.svg'),
     web: 'https://mindhubweb.com/',
-    rs_link_icon: require('../../assets/statics/icons/linkedin-tile.svg'),
-    rs_tw_icon: require('../../assets/statics/icons/twitter-official.svg'),
-    rs_ig_icon: require('../../assets/statics/icons/icon-instagram.svg'),
+
     rs_link_web: 'https://www.linkedin.com/school/mindhub-la/',
     rs_tw_web: 'https://twitter.com/MINDhubMx',
     rs_ig_web: 'https://www.instagram.com/mindhub_la/',
@@ -209,9 +205,7 @@ export const Educations = [
     img: require('../../assets/statics/image/platzi_7.png'),
     logo: require('../../assets/statics/icons/web.svg'),
     web: 'https://platzi.com/',
-    rs_link_icon: require('../../assets/statics/icons/linkedin-tile.svg'),
-    rs_tw_icon: require('../../assets/statics/icons/twitter-official.svg'),
-    rs_ig_icon: require('../../assets/statics/icons/icon-instagram.svg'),
+
     rs_link_web: 'https://www.linkedin.com/school/platzi-inc/',
     rs_tw_web: 'https://twitter.com/platzi',
     rs_ig_web: 'https://www.instagram.com/platzi/',

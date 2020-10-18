@@ -1,4 +1,50 @@
+//fonts
 @import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap);
 
+//global
+$title-font: 'Source Code Pro', monospace;
 $theme-font: 'Muli', sans-serif;
 $main-color: beige;
+
+//paleta de colores
+//option #1
+$dark-color: rgb(68, 68, 68);
+$danger-color: rgb(255, 34, 85);
+$light-color: rgb(238, 238, 221);
+$light-green: rgb(204, 221, 204);
+$green-color: rgb(85, 153, 153);
+
+//option #2
+
+$wine: rgb(43, 0, 46);
+$light-gray: rgb(114, 129, 139);
+$dark-gray: rgb(69, 72, 87);
+$medium-blue: rgb(79, 87, 170);
+$light-blue: rgb(190, 226, 231);
+
+//responsive breakpoints
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == laptop {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (min-width: 576px) {
+      @content;
+    }
+  } @else if $point == mobileonly {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+}

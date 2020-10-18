@@ -2,6 +2,7 @@ import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import '../../assets/styles/components/Portafolio.scss';
 
 const Project = ({ name, date, desc, repo, deploy }) => {
@@ -24,6 +25,7 @@ const Project = ({ name, date, desc, repo, deploy }) => {
           </a>
           <a href={repo} className='btn btn-default'>
             <FontAwesomeIcon icon={faGithub} />
+            
           </a>
         </div>
       </div>

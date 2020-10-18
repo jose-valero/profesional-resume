@@ -1,65 +1,125 @@
+@import '../Vars.scss';
+
 .home__container {
   background-image: url('../../statics//image/10137.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100%;
   width: 100%;
   opacity: 1;
+
+  @include breakpoint(mobileonly) {
+    height: auto;
+    max-width: auto;
+  }
 }
 
 .home__content {
   padding: 5% 20% 0 20%;
-  color: white;
+
+  @include breakpoint(mobileonly) {
+    padding: 5% 10% 0 10%;
+    color: $light-blue;
+  }
+  @include breakpoint(tablet) {
+    padding: 5%;
+  }
 }
 .home__content-title {
-  font-size: 5.5rem;
-  color: #ccddcc;
+  color: $light-blue;
   text-align: center;
+  font-family: $title-font;
+
+  @include breakpoint(mobileonly) {
+    font-size: 2rem;
+    padding: 3rem 0 0 0;
+  }
+  @include breakpoint(mobile) {
+    font-size: 3rem;
+    padding: 4.5rem 0 0 0;
+  }
+  @include breakpoint(tablet) {
+    font-size: 3.5rem;
+    padding: 6rem 0 0 0;
+  }
+  @include breakpoint(desktop) {
+    font-size: 5.5rem;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .home__content-text {
+  text-align: center;
   line-height: 4.5rem;
-  color: #ccddcc;
+  color: $light-blue;
+  font-family: $title-font;
+
+  @include breakpoint(mobileonly) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  @include breakpoint(mobile) {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  @include breakpoint(tablet) {
+    font-size: 1.75rem;
+    line-height: 3.5rem;
+  }
+  @include breakpoint(desktop) {
+    font-size: 2.25rem;
+    line-height: 4.5rem;
+    padding-bottom: 5rem;
+  }
 }
 .home__fotoPerfil {
   border-radius: 50px;
-  width: 30vh;
-  height: 45vh;
   opacity: 0.7;
-  display: flex;
-  text-align: center;
-  display: block;
-  margin: 0 auto 5rem auto;
+  padding: 0;
+
+  @include breakpoint(mobileonly) {
+    width: 55%;
+    height: auto;
+    margin: 22.5%;
+  }
+  @include breakpoint(mobile) {
+    width: 60%;
+    height: auto;
+    margin: 20%;
+  }
+  @include breakpoint(tablet) {
+    width: 45%;
+    height: auto;
+    margin: 27.5%;
+  }
+
+  @include breakpoint(desktop) {
+    width: 20%;
+    height: auto;
+    margin: 10% 40% 10% 40%;
+  }
 }
 
 .home__social {
   display: flex;
-  padding: 10rem 0 10rem 0;
-  margin: 0 25% 0 25%;
-  align-items: center;
-}
-
-.home__social-icon {
-  margin-right: 4rem;
-  width: 3rem;
-  height: 3rem;
-}
-
-@media (min-width: 220px) and (max-width: 425px) {
-  .home__content-title {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-size: 25%;
+  justify-content: center;
+  padding: 3rem 0 4rem 0;
+  @include breakpoint(desktop) {
+    padding-top: 5rem;
   }
 }
 
-@media (max-width: 1165px) {
-  .home__container {
-    height: 150vh;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    opacity: 1;
+.home__social-icon {
+  width: 3rem;
+  height: 3rem;
+  @include breakpoint(mobileonly) {
+    width: 50%;
+    height: 100%;
+  }
+  @include breakpoint(mobile) {
+    width: 65%;
+    height: 100%;
   }
 }

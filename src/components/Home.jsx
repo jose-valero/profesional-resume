@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import fotoPerfil from '../assets/statics/image/profile-foto-2.png';
 import { Personal_Social } from './data/Data';
 import Social from '../components/subComponents/Social';
+import { Link } from 'react-router-dom';
+
 import '../assets/styles/App.scss';
 import '../assets/styles/components/Home.scss';
 
@@ -24,10 +26,13 @@ class Home extends React.Component {
               <h3 className='home__content-text text-center'>
                 Estudiante y <b>Frontend Developer</b> viviendo en Buenos Aires
                 Argentina, A continuacion vera un poco mi portafolio y
-                aprenderan algunas cosas acerca de mi, Pagina creada de un
-                Frontend para programadores y Recruiters
+                aprenderan algunas cosas acerca de mi, y tambien demostrando un
+                poco mis habilidades con diferentes tecnologias{' '}
+                <strong>
+                  <Link to='/about'>Conóceme</Link>
+                </strong>
               </h3>
-              <div className='home__social d-flex justify-content-center'>
+              <div className='home__social '>
                 {Personal_Social.map((rs) => (
                   <Social key={rs.id} {...rs} />
                 ))}
