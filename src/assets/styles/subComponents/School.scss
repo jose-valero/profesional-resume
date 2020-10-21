@@ -1,283 +1,89 @@
-.school__footer-icons {
-  text-align: center;
-}
+@import '../Vars.scss';
 
 .school__card {
   margin: 1rem;
   padding: 1rem;
   flex-basis: auto;
   flex-grow: 1;
-}
-
-@media (max-width: 425px) {
-  .school__card {
-    margin: 1rem;
+  @include breakpoint(mobileonly) {
     padding: 0;
     width: 100%;
   }
-  .school__hover-item-title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.25rem !important;
-    z-index: 99;
-    font-size: 50%;
-    font-weight: 600;
-    margin-bottom: 0;
-    text-transform: uppercase !important;
+  @include breakpoint(mobile) {
+    width: 100%;
   }
-  .school__hover-item-description {
-    position: absolute;
-    top: 0.35rem;
-    left: 1rem;
+  @include breakpoint(tablet) {
+    padding: 0;
+    width: 80%;
+  }
+  @include breakpoint(laptop) {
+    padding: 0;
+    width: 28%;
+    margin-right: 2rem;
+  }
+
+}
+
+.school__hover-item-title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5%;
+  z-index: 99;
+  font-weight: 300;
+  margin-bottom: 0;
+  text-transform: uppercase !important;
+  color: $light-blue;
+  font-size: calc(1rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
+}
+
+.school__hover-item-description {
+  color: $light-blue;
+  position: absolute;
+  border-right: 3px solid $danger-color;
+  z-index: 99;
+  text-transform: uppercase !important;
+  transform: translateX(-1.5rem);
+  opacity: 0;
+  transition: all 0.3s;
+  font-size: calc(16px + (24 - 16) * (100vw - 576px) / (2200 - 576));
+  align-items: center;
+  @include breakpoint(mobileonly) {
+    top: 0.5rem;
+    right: 1.25rem;
     bottom: 2rem;
-    right: 2.25rem;
-    text-align: right;
-    border-right: 2px solid #fff;
-    padding: 0 1rem;
-    z-index: 99;
-    transform: translateX(-1.5rem);
-    opacity: 0;
-    transition: all 0.3s;
+    left: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
   }
-}
-
-// @media (min-width: 375px) and (max-width: 425px) {
-// }
-
-@media (min-width: 425px) and (max-width: 575px) {
-  .school__card {
-    margin: 1rem;
-    padding: 0;
-    width: 100%;
+  @include breakpoint(mobile) {
+    top: 3rem;
+    right: 2.5rem;
+    bottom: 2.75rem;
+    left: 1.25rem;
+    padding-top: 0.25rem;
+    margin-top: 0.25rem;
   }
-  .school__hover-item-title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.25rem !important;
-    z-index: 99;
-    font-size: 90%;
-    font-weight: 600;
-    margin: 0 1rem 1rem 0;
-    text-transform: uppercase !important;
-  }
-  .school__hover-item-description {
-    position: absolute;
+  @include breakpoint(laptop) {
     top: 1rem;
-    left: 2rem;
-    margin-right: 1.25rem;
-
-    text-align: right;
-    border-right: 3px solid #fff;
-    padding: 0 1rem;
-    z-index: 99;
-    transform: translateX(-1.5rem);
-    opacity: 0;
-    transition: all 0.3s;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 1124px) {
-  .school__card {
-    margin: 2rem;
-    padding: 0;
-    width: 100%;
-  }
-  .school__hover-item-title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.25rem !important;
-    z-index: 99;
-    font-size: 90%;
-    font-weight: 600;
-    margin: 0 1rem 1rem 0;
-    text-transform: uppercase !important;
-  }
-  .school__hover-item-description {
-    position: absolute;
-    top: 2.25rem;
-    left: 1rem;
-    margin-right: 1.25rem;
     right: 2rem;
-    text-align: left;
-    border-right: 3px solid #fff;
-    padding: 0 1rem;
-    z-index: 99;
-    transform: translateX(-1.5rem);
-    opacity: 0;
-    transition: all 0.7s;
+    bottom: 3rem;
+    left: 1.25rem;
+    padding-top: 0.5rem;
+    margin: 0.5rem 0.5rem;
   }
-}
-
-@media (min-width: 1123.98px) and (max-width: 1440px) {
-  .school__card {
-    margin-right: 15%;
-    margin-left: 15%;
-    padding: 0;
-    width: 100%;
-    height: auto;
-  }
-  .school__hover-item-title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.25rem !important;
-    z-index: 99;
-    font-size: 90%;
-    font-weight: 600;
-    margin: 0 1rem 1rem 0;
-    text-transform: uppercase !important;
-  }
-  .school__hover-item-description {
-    position: absolute;
-    top: 2.25rem;
-    left: 1rem;
-    margin-right: 1.25rem;
+  @include breakpoint(desktop) {
+    top: 1rem;
     right: 2rem;
-    text-align: left;
-    border-right: 3px solid #fff;
-    padding: 0 1rem;
-    z-index: 99;
-    transform: translateX(-1.5rem);
-    opacity: 0;
-    transition: all 0.7s;
-    width: 50%;
+    bottom: 4rem;
+    left: 1.25rem;
   }
-  .school__hover {
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 60%;
-  }
-
-  .school__hover-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    transition: all 0.4s;
-  }
-
-  .school__hover img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.3s;
-  }
-
-  .school__hover-content {
-    position: relative;
-    z-index: 99;
-  }
-
-  .school__hover-item img {
-    width: 110%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .school__hover-item .school__hover-overlay {
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 90;
-  }
-
-  .school__hover-item-title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 3rem;
-    z-index: 99;
-  }
-}
-
-// test1
-
-@media (min-width: 1440px) {
-  .school__card {
-    margin-right: 2%;
-    margin-left: 2%;
-    padding: 0;
-    width: 25%;
-    height: auto;
-  }
-  .school__hover-item-title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.25rem !important;
-    z-index: 99;
-    font-size: 90%;
-    font-weight: 600;
-    margin: 0 1rem 1rem 0;
-    text-transform: uppercase !important;
-  }
-  .school__hover-item-description {
-    position: absolute;
-    top: 2.25rem;
-    left: 1rem;
-    margin-right: 1.25rem;
-    right: 2rem;
-    text-align: left;
-    border-right: 3px solid #fff;
-    padding: 0 1rem;
-    z-index: 99;
-    transform: translateX(-1.5rem);
-    opacity: 0;
-    transition: all 0.7s;
-    width: 50%;
-  }
-  .school__hover {
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 60%;
-  }
-
-  .school__hover-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    transition: all 0.4s;
-  }
-
-  .school__hover img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.3s;
-  }
-
-  .school__hover-content {
-    position: relative;
-    z-index: 99;
-  }
-
-  .school__hover-item img {
-    width: 110%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .school__hover-item .school__hover-overlay {
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 90;
-  }
-
-  .school__hover-item-title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 3rem;
-    z-index: 99;
+  @include breakpoint(xldevice) {
+    top: 3rem;
+    right: 3rem;
+    bottom: 8rem;
+    left: 1.25rem;
+    border-right: 5px solid $danger-color;
   }
 }
 
@@ -285,6 +91,14 @@
   overflow: hidden;
   position: relative;
   padding-bottom: 60%;
+}
+
+.school__hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
 }
 
 .school__hover-overlay {
@@ -297,17 +111,14 @@
   transition: all 0.4s;
 }
 
-.school__hover img {
+.school__hover-overlay {
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 0.3s;
-}
-
-.school__hover-content {
-  position: relative;
-  z-index: 99;
+  z-index: 90;
+  transition: all 0.4s;
 }
 
 .school__hover-item img {
@@ -317,17 +128,14 @@
   transform: translate(-50%, -50%);
 }
 
+.school__hover-content {
+  position: relative;
+  z-index: 99;
+}
+
 .school__hover-item .school__hover-overlay {
   background: rgba(0, 0, 0, 0.4);
   z-index: 90;
-}
-
-.school__hover-item-title {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 3rem;
-  z-index: 99;
 }
 
 .school__hover-item:hover img {

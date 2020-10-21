@@ -1,9 +1,12 @@
 //fonts
 @import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
 
 //global
 $title-font: 'Source Code Pro', monospace;
+$app-font: 'Source Code Pro', monospace;
+$code-font: 'Press Start 2P', cursive;
 $theme-font: 'Muli', sans-serif;
 $main-color: beige;
 
@@ -20,13 +23,29 @@ $green-color: rgb(85, 153, 153);
 $wine: rgb(43, 0, 46);
 $light-gray: rgb(114, 129, 139);
 $dark-gray: rgb(69, 72, 87);
-$medium-blue: rgb(79, 87, 170);
+$mid-blue: rgb(79, 87, 170);
 $light-blue: rgb(190, 226, 231);
 
+//option #3
+$background-color: #ece0e8;
+$color-primary-light: #ca3782;
+$color-primary-dark: #1e0b36;
+$color-black: #000;
+$color-gray-dark: #aaa;
+$color-gray-light: #eee;
+$color-white: #fff;
 //responsive breakpoints
 
 @mixin breakpoint($point) {
-  @if $point == desktop {
+  @if $point == xldevice {
+    @media (min-width: 2200px) {
+      @content;
+    }
+  } @else if $point == largedevice {
+    @media (min-width: 1700px) {
+      @content;
+    }
+  } @else if $point == desktop {
     @media (min-width: 1200px) {
       @content;
     }
@@ -46,5 +65,97 @@ $light-blue: rgb(190, 226, 231);
     @media (max-width: 576px) {
       @content;
     }
+  } @else if $point == font-phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  } @else if $point == font-tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  } @else if $point == font-tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  } @else if $point == font-big-desktop {
+    @media (max-width: 37.5em) {
+      @content;
+    }
   }
+}
+// Mixins
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flexCenter {
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+//font cards portafolio
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } // < 600px
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } // < 900px
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    } // < 1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    } // > 1800px
+  }
+}
+
+@mixin subtitles {
+  font-size: calc(2rem + (24 - 32) * (100vw - 576px) / (2200 - 576));
+  @include breakpoint(mobileonly) {
+    text-align: center;
+  }
+  @include breakpoint(mobile) {
+    text-align: center;
+  }
+  @include breakpoint(desktop) {
+    text-align: left;
+  }
+}
+
+@mixin hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  h1 {
+    font-size: 5rem;
+    color: $light-blue;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    @include breakpoint(mobileonly) {
+      font-size: 3rem;
+    }
+  }
+}
+
+@mixin textResponsive {
+  font-size: calc(1.25rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
+
+  text-align: center;
 }

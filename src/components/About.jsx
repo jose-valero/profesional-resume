@@ -23,20 +23,24 @@ class About extends React.Component {
     if (langReducer === 'ES') {
       return (
         <>
-          <div
-            className='about__container'
-            data-aos='fade-down'
-            data-aos-easing="linear"
-            data-aos-duration="650"
-          >
-            <CardGroup className='about__cardGroup'>
-              {Hobbies.map((hobbi) => (
-                <Hobbie key={hobbi.id} {...hobbi} />
-              ))}
-            </CardGroup>
-            <div className='about__content'>
-              <div className='row about__content-text m-3'>
-                <p>
+          <div className='about__container'>
+            <div className='about__hero'>
+              <h1>Conoceme</h1>
+            </div>
+            <div
+              className='about__content-fade'
+              data-aos='fade-down'
+              data-aos-easing='linear'
+              data-aos-duration='450'
+            >
+              <CardGroup className='about__cardGroup'>
+                {Hobbies.map((hobbi) => (
+                  <Hobbie key={hobbi.id} {...hobbi} />
+                ))}
+              </CardGroup>
+
+              <div className='about__content'>
+                <p className='about__content-text'>
                   Desde ya un año me comprometí a realizar un cambio rotundo
                   hacia el mundo de la Programación y Desarrollo, Me considero
                   un asiduo estudiante y un profesional comprometido..
@@ -44,26 +48,26 @@ class About extends React.Component {
                   FullStack Developer, y por que no? Algún día dirigir grandes
                   proyectos.
                 </p>
-              </div>
 
-              <div className='about__content-skills row'>
-                <div className='col-12 col-md-6 col-lg-6 my-2'>
-                  <div className='col-12 col-md col-lg-8'>
-                    <h4 className='about__title-skills'>Skills</h4>
-                    {Skills.map((skill) => (
-                      <Skill key={skill.id} {...skill} />
-                    ))}
+                <div className='about__content-skills row'>
+                  <div className='col-12 col-md-6 col-lg-6 my-2'>
+                    <div className='col-12 col-md col-lg-8'>
+                      <h4 className='about__title-skills'>Skills</h4>
+                      {Skills.map((skill) => (
+                        <Skill key={skill.id} {...skill} />
+                      ))}
+                    </div>
                   </div>
-                </div>
 
-                <div className='col-12 col-md-6 col-lg-6 d-flex my-4'>
-                  <div className='about__tech-container'>
-                    <p className='about__tech-title'>
-                      Tecnologias y herramientas
-                    </p>
-                    {Technologies.map((tech) => (
-                      <Technoligie key={tech.id} {...tech} className='' />
-                    ))}
+                  <div className='col-12 col-md-6 col-lg-6 my-2'>
+                    <div className='about__tech-container'>
+                      <p className='about__tech-title'>
+                        Tecnologias y herramientas
+                      </p>
+                      {Technologies.map((tech) => (
+                        <Technoligie key={tech.id} {...tech} className='asd' />
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

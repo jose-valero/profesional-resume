@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button';
 import { lanSelect } from '../../actions';
 import '../../assets/styles/components/Header.scss';
 
-
 class Header extends React.Component {
   render() {
     const langReducer = this.props.langReducer;
@@ -23,10 +22,9 @@ class Header extends React.Component {
       <Navbar
         collapseOnSelect
         expand={'lg'}
-        bg='dark'
-        variant='dark'
         className='header__container '
         sticky='top'
+        variant="dark"
       >
         <div className='d-flex'>
           <Link to='/' className='header__brand font-weight-bolder'>

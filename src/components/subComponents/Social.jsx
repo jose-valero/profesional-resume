@@ -1,10 +1,13 @@
 import React from 'react';
+import '../../assets/styles/components/Home.scss';
 
 const Social = ({ img, website }) => {
   return (
-    <a href={website} target='_blank' rel='noopener noreferrer'>
-      <img className='home__social-icon' src={img} alt='Linkedin' />
-    </a>
+    <>
+      <a href={website}>
+        <img className='home__social-icon' src={img} alt='...' />
+      </a>
+    </>
   );
 };
 

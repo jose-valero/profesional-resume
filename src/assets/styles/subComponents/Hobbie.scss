@@ -1,27 +1,115 @@
+@import '../Vars.scss';
+
+.hobbie__cards.card {
+  margin: 2rem 0 2rem 0;
+  padding: 0 !important;
+  border: 0ch;
+
+  @include breakpoint(mobile) {
+    margin: 0 0.75rem 0 0.75rem;
+  }
+  @include breakpoint(tablet) {
+    margin: 0 2.25rem 0 2.25rem;
+  }
+  @include breakpoint(laptop) {
+    margin: 0 2.5rem 0 2.5rem;
+  }
+  @include breakpoint(desktop) {
+    margin: 0 6.5rem 0 6.5rem;
+  }
+  @include breakpoint(largedevice) {
+    margin: 0 12rem 0 12rem;
+  }
+  @include breakpoint(xldevice) {
+    margin: 0 18rem 0 18rem;
+  }
+}
+
 .hobbies__image {
   max-width: 100%;
   height: 35%;
 }
-.hobbie__card-body {
-  height: 55%;
+.card-img,
+.card-img-top {
+  border-top-left-radius: none;
+  border-top-right-radius: none;
 }
+.hobbie__card-body {
+  background: $light-color;
+  height: 55%;
+  @include breakpoint(mobile) {
+    font-size: 8px;
+  }
+}
+
+.hobbie__card-body.card-body {
+  @include breakpoint(mobile) {
+    padding: 0.75rem 0.25rem 0.75rem 0.25rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 1rem 0.75rem 1rem 0.75rem;
+  }
+}
+
 .hobbie__body-text {
   font-size: 10px;
+  @include breakpoint(mobile) {
+    font-size: auto;
+  }
+  @include breakpoint(tablet) {
+    font-size: 10px;
+  }
+  @include breakpoint(laptop) {
+    font-size: 16px;
+  }
+}
+
+.hobbie__footer-body.card-footer {
+  padding-top: 0.5rem !important;
+  line-height: 0.25rem !important;
+  height: 12%;
+  padding-left: 0.5rem !important;
+  padding-right: 0.15rem !important;
+  background: $danger-color !important;
+  display: flex;
+  align-items: center;
+  @include breakpoint(laptop) {
+    padding-top: 0.25rem !important;
+    line-height: 0.75rem !important;
+    height: 12.5%;
+    padding-left: 0.25rem !important;
+  }
+  @include breakpoint(mobile) {
+    padding-top: 0.5rem !important;
+    line-height: 0.75rem !important;
+    height: 8.5%;
+    padding-left: 0.25rem !important;
+  }
+
+  small {
+    margin: 0;
+    padding: 0;
+    color: $light-color;
+    font-size: 0.25rem;
+    @include breakpoint(tablet) {
+      font-size: 0.5rem;
+    }
+    @include breakpoint(laptop) {
+      font-size: 0.75rem;
+    }
+  }
 }
 
 .hobbie__cards:hover {
   opacity: 1;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(4, 0, 34, 0.796);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9), 0 3px 10px 0 rgba(4, 0, 34, 0.796);
   animation-name: example;
   animation-duration: 0.25s;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.hobbie__cards {
-  margin-right: 10px;
-  opacity: 0.75;
-}
-
+//effect grayscale
 .hobbie__cards {
   img {
     filter: url('#grayscale');
@@ -53,57 +141,5 @@
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-  }
-}
-
-.hobbie__footer-body {
-  padding-top: 0.5rem !important;
-  line-height: 0.5rem !important;
-  height: 10%;
-  padding-left: 0.5rem !important;
-  padding-right: 0.15rem !important;
-
-  small {
-    color: #6c757d;
-    font-size: 0.45rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hobbie__cards {
-    margin-right: 10px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1524px) {
-  .hobbie__cards {
-    margin-right: 10px;
-  }
-
-  .hobbie__body-text {
-    font-size: 14px;
-  }
-
-  .hobbie__footer-body {
-    small {
-      color: #6c757d;
-      font-size: 0.55rem;
-    }
-  }
-}
-
-@media (min-width: 1524px) {
-  .hobbie__cards {
-    margin-right: 4rem;
-  }
-
-  .hobbie__body-text {
-    font-size: 20px;
-  }
-  .hobbie__footer-body {
-    small {
-      color: #6c757d;
-      font-size: 0.75rem;
-    }
   }
 }

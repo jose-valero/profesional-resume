@@ -1,7 +1,9 @@
+@import '../Vars.scss';
+
 .header__container {
-  background-color: #444444;
+  background-color: $danger-color;
   box-shadow: 0 0.25rem 0.5rem rgba(52, 58, 64, 0.5);
-  color: #eeeedd;
+  color: $light-gray;
 }
 
 .header__content {
@@ -16,7 +18,7 @@
 }
 .header__brand:hover {
   text-decoration: none;
-  color: #559999;
+  color: $dark-color;
 }
 
 .header__item {
@@ -29,7 +31,8 @@
 
 .header__item:hover {
   text-decoration: none;
-  color: #559999;
+  color: $dark-color;
+  font-weight: 700;
 }
 
 //  test

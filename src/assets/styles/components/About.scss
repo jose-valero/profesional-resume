@@ -1,12 +1,23 @@
-.about__container {
-  background-image: url('../../statics/image/5086.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+@import '../Vars.scss';
 
-  background-attachment: fixed;
-  height: 450px;
+.about__container {
+  height: auto;
   width: 100%;
+}
+
+.about__hero {
+  background-image: url('../../statics/image/hero_1.jpg');
+  @include hero;
+}
+
+.about__cardGroup {
+  padding: 2rem 2rem 0 2rem;
+  @include breakpoint(mobile) {
+    margin: 0 1.25rem 0 1.25rem;
+  }
+  @include breakpoint(tablet) {
+    margin: 0 0.25rem 0 0.25rem;
+  }
 }
 
 .about__content {
@@ -18,37 +29,8 @@
 .about__content-text,
 p {
   font-size: 1rem;
-}
-
-@media (min-width: 768px) and (max-width: 1560px) {
-  .about__container {
-    height: 120vh;
-    width: 100%;
+  text-align: center;
+  @include breakpoint(laptop) {
+    font-size: 2rem;
   }
-}
-
-@media (min-width: 1024px) and (max-width: 1560px) {
-  .about__container {
-    height: 160vh;
-    width: 100%;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-}
-@media (min-width: 1444px) and (max-width: 2560px) {
-  .about__container {
-    height: 100%;
-    width: 100%;
-  }
-
-  .about__content-text,
-  p {
-    font-size: 3rem;
-  }
-}
-
-.about__cardGroup {
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 5rem;
 }

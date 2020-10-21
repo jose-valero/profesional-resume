@@ -1,8 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
-
 @import './Vars.scss';
 
 body {
-  font-family: $theme-font !important;
-  background: $main-color !important;
+  font-family: $app-font !important;
+  background-color: $mid-blue !important;
 }

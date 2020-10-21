@@ -23,7 +23,12 @@ class Home extends React.Component {
                 alt='foto-perfil'
               />
 
-              <h3 className='home__content-text text-center'>
+              <div className='home__social'>
+                {Personal_Social.map((rs) => (
+                  <Social key={rs.id} {...rs} />
+                ))}
+              </div>
+              <h3 className='home__content-text'>
                 Estudiante y <b>Frontend Developer</b> viviendo en Buenos Aires
                 Argentina, A continuacion vera un poco mi portafolio y
                 aprenderan algunas cosas acerca de mi, y tambien demostrando un
@@ -32,11 +37,6 @@ class Home extends React.Component {
                   <Link to='/about'>Conóceme</Link>
                 </strong>
               </h3>
-              <div className='home__social '>
-                {Personal_Social.map((rs) => (
-                  <Social key={rs.id} {...rs} />
-                ))}
-              </div>
             </div>
           </div>
         </>

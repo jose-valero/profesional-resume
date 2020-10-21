@@ -1,13 +1,23 @@
-.about__content-skills {
-  p {
-    margin-bottom: 20px;
+@import '../Vars.scss';
+
+.about__title-skills {
+  padding: 2rem 0 1.5rem 0;
+}
+.about__title-skills,
+.about__tech-title {
+  color: $light-blue;
+  border-bottom: 1px solid $wine;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
+  @include breakpoint(tablet) {
+    border-bottom: 0;
   }
-  .about__title-skills {
-    font-size: 25px;
-    border-bottom: 1px solid #ff2255;
-    padding: 20px 0;
-    margin-bottom: 30px;
-    font-weight: 600;
+  @include breakpoint(desktop) {
+    font-size: 2.5rem;
+  }
+  @include breakpoint(xldevice) {
+    font-size: 3.75rem;
   }
 }
 
