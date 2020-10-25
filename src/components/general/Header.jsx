@@ -2,85 +2,115 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Navbar, Nav } from 'react-bootstrap/';
-import Button from 'react-bootstrap/Button';
 
 import { lanSelect } from '../../actions';
 import '../../assets/styles/components/Header.scss';
 
+import download from '../../assets/statics/icons/pdf-file.svg';
+import usaFlag from '../../assets/statics/icons/usa_1.svg';
+import argFlag from '../../assets/statics/icons/arg_1.svg';
+
 class Header extends React.Component {
   render() {
     const langReducer = this.props.langReducer;
-    var esActive, enActive;
-    if (langReducer === 'ES') {
-      esActive = 'btn btn-success';
-      enActive = 'btn btn-primary';
-    } else {
-      esActive = 'btn btn-success';
-      enActive = 'btn btn-primary';
-    }
-    return (
-      <Navbar
-        collapseOnSelect
-        expand={'lg'}
-        className='header__container '
-        sticky='top'
-        variant="dark"
-      >
-        <div className='d-flex'>
-          <Link to='/' className='header__brand font-weight-bolder'>
-            Home
-          </Link>
-          <Button
-            role='button'
-            aria-pressed='true'
-            size='sm'
-            className={`${esActive}`}
-            type='button'
-            onClick={() => this.props.lanSelect('ES')}
-          >
-            ES
-          </Button>
-          |
-          <Button
-            role='button'
-            aria-pressed='true'
-            size='sm'
-            type='button'
-            className={`${enActive}`}
-            onClick={() => this.props.lanSelect('EN')}
-          >
-            EN
-          </Button>
-        </div>
 
-        <Navbar.Toggle aria-controls='responsive-navbar-nav' className='' />
-        <Navbar.Collapse id='responsive-navbar-nav' className='header__content'>
-          <Nav className='mx-auto'>
-            <Link className='effect slide-up header__item' to='/About'>
-              About
+    if (langReducer === 'ES') {
+      return (
+        <Navbar
+          collapseOnSelect
+          expand={'lg'}
+          className='header__container '
+          fixed='top'
+        >
+          <div className='d-flex'>
+            <Link to='/' className='header__brand font-weight-bolder'>
+              Home
             </Link>
-            <Link className='effect slide-up header__item' to='/education'>
-              Education
+            <Link to='#' onClick={() => this.props.lanSelect('ES')}>
+              <img src={argFlag} alt='' className='mx-1' />
             </Link>
-            <Link className='effect slide-up header__item' to='/portafolio'>
-              Portafolio
+
+            <Link to='#' onClick={() => this.props.lanSelect('EN')}>
+              <img src={usaFlag} alt='' className='mx-1' />
             </Link>
-            <Link className='effect slide-up header__item' to='/contact'>
-              contact
+          </div>
+
+          <Navbar.Toggle aria-controls='responsive-navbar-nav' className='' />
+          <Navbar.Collapse
+            id='responsive-navbar-nav'
+            className='header__content'
+          >
+            <Nav className='mx-auto'>
+              <Link className='effect slide-up header__item' to='/About'>
+                Conoceme
+              </Link>
+              <Link className='effect slide-up header__item' to='/education'>
+                Educacion
+              </Link>
+              <Link className='effect slide-up header__item' to='/portafolio'>
+                Portafolio
+              </Link>
+              <Link className='effect slide-up header__item' to='/contact'>
+                Contactame
+              </Link>
+
+              <Link className='effect slide-up header__item' to='/resume'>
+                <img src={download} alt='' />
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      );
+    } else {
+      return (
+        <Navbar
+          collapseOnSelect
+          expand={'lg'}
+          className='header__container '
+          fixed='top'
+        >
+          <div className='header__brand--left'>
+            <Link to='/' className='header__brand font-weight-bolder'>
+              Home
             </Link>
-            <Link className='effect slide-up header__item' to='/game'>
-              relax spot
+            <Link to='#' onClick={() => this.props.lanSelect('ES')}>
+              <img src={argFlag} alt='' className='header__lang-img' />
             </Link>
-            <Link className='effect slide-up header__item' to='/resume'>
-              Download Resume
+
+            <Link to='#' onClick={() => this.props.lanSelect('EN')}>
+              <img src={usaFlag} alt='' className='header__lang-img' />
             </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    );
+          </div>
+
+          <Navbar.Toggle aria-controls='responsive-navbar-nav' className='' />
+          <Navbar.Collapse
+            id='responsive-navbar-nav'
+            className='header__content'
+          >
+            <Nav className='mx-auto'>
+              <Link className='effect slide-up header__item' to='/About'>
+                About
+              </Link>
+              <Link className='effect slide-up header__item' to='/education'>
+                Education
+              </Link>
+              <Link className='effect slide-up header__item' to='/portafolio'>
+                Portafolio
+              </Link>
+              <Link className='effect slide-up header__item' to='/contact'>
+                contact
+              </Link>
+
+              <Link className='effect slide-up header__item' to='/resume'>
+                <img src={download} alt='' />
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      );
+    }
   }
 }
-
 const mapStateToProps = (state) => {
   return {
     langReducer: state.langReducer,

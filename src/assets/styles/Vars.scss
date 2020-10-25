@@ -3,13 +3,23 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
 
+//home image
+@mixin homeBg {
+  background-image: url('../statics/image/hero-background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
+  // background-attachment: fixed;
+}
+
 //global
 $title-font: 'Source Code Pro', monospace;
 $app-font: 'Source Code Pro', monospace;
 $code-font: 'Press Start 2P', cursive;
 $theme-font: 'Muli', sans-serif;
-$main-color: beige;
-
+$main-color: rgb(79, 87, 170);
 //paleta de colores
 //option #1
 $dark-color: rgb(68, 68, 68);
@@ -65,25 +75,26 @@ $color-white: #fff;
     @media (max-width: 576px) {
       @content;
     }
-  } @else if $point == font-phone {
-    @media (max-width: 37.5em) {
-      @content;
-    }
-  } @else if $point == font-tab-port {
-    @media (max-width: 56.25em) {
-      @content;
-    }
-  } @else if $point == font-tab-land {
-    @media (max-width: 75em) {
-      @content;
-    }
-  } @else if $point == font-big-desktop {
-    @media (max-width: 37.5em) {
-      @content;
-    }
   }
+  // } @else if $point == font-phone {
+  //   @media (max-width: 37.5em) {
+  //     @content;
+  //   }
+  // } @else if $point == font-tab-port {
+  //   @media (max-width: 56.25em) {
+  //     @content;
+  //   }
+  // } @else if $point == font-tab-land {
+  //   @media (max-width: 75em) {
+  //     @content;
+  //   }
+  // } @else if $point == font-big-desktop {
+  //   @media (max-width: 37.5em) {
+  //     @content;
+  //   }
+  // }
 }
-// Mixins
+// Mixins centered
 @mixin absCenter {
   position: absolute;
   top: 50%;
@@ -135,6 +146,7 @@ $color-white: #fff;
 }
 
 @mixin hero {
+  background-image: url("../statics/image/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -155,7 +167,7 @@ $color-white: #fff;
 }
 
 @mixin textResponsive {
-  font-size: calc(1.25rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
+  font-size: calc(1.5rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
 
   text-align: center;
 }

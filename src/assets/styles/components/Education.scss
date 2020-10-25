@@ -6,7 +6,6 @@
 }
 
 .education__hero {
-  background-image: url('../../statics/image/hero_1.jpg');
   @include hero;
 }
 
@@ -30,9 +29,10 @@
 //cards
 .education__row-1 {
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 10%;
+  margin-left: 10%;
   display: flex;
+  justify-content: center;
 }
 
 //diplomas

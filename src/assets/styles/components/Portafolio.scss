@@ -26,7 +26,6 @@ body {
 }
 
 .portafolio__hero {
-  background-image: url('../../statics/image/hero_1.jpg');
   @include hero;
 }
 
@@ -322,7 +321,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    background-image: url('../../statics/image/card_bg_1.jpg');
+    background-image: url('../../statics/image/hero-background.jpg');
     // background-size: cover;
   }
 

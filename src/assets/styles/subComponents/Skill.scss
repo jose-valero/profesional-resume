@@ -5,7 +5,7 @@
 }
 .about__title-skills,
 .about__tech-title {
-  color: $light-blue;
+  color: $dark-color;
   border-bottom: 1px solid $wine;
   font-weight: 600;
   font-size: 1.75rem;
@@ -25,10 +25,10 @@
   margin-top: 20px;
 }
 .skill__name {
-  font-size: 0.8em;
+  @include textResponsive;
   text-transform: uppercase;
   margin-bottom: 0.25em;
-  color: #ccddcc;
+  color:$dark-color;
 }
 .speech-bubble {
   font-size: 0.75em;

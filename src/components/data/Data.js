@@ -63,52 +63,52 @@ export const Technologies = [
   {
     id: 'id_icon-html',
     name: 'HTML5',
-    icon: require('../../assets/statics/icons/icon-html5.png'),
+    icon: require('../../assets/statics/icons/icon-html_1.svg'),
   },
   {
     id: 'id_icon-css3',
     name: 'CSS3',
-    icon: require('../../assets/statics/icons/icon-css3.png'),
+    icon: require('../../assets/statics/icons/icon-css3_3.svg'),
   },
   {
     id: 'id_icon-sass',
     name: 'Sass',
-    icon: require('../../assets/statics/icons/icon-sass.svg'),
+    icon: require('../../assets/statics/icons/icon-scss_1.svg'),
   },
   {
     id: 'id_icon-js',
     name: 'JavaScript',
-    icon: require('../../assets/statics/icons/icon-javascript.png'),
+    icon: require('../../assets/statics/icons/icon-js_1.svg'),
   },
   {
     id: 'id_icon-react',
     name: 'Reactjs',
-    icon: require('../../assets/statics/icons/icon-react.png'),
+    icon: require('../../assets/statics/icons/icon-react_1.svg'),
   },
   {
     id: 'id_icon-redux',
     name: 'Redux',
-    icon: require('../../assets/statics/icons/icon-redux.png'),
+    icon: require('../../assets/statics/icons/icon-redux_1.svg'),
   },
   {
     id: 'id_icon-vue',
     name: 'Vuejs',
-    icon: require('../../assets/statics/icons/icon-vue-js.png'),
+    icon: require('../../assets/statics/icons/icon-vue_1.svg'),
   },
   {
     id: 'id_icon-bootstrap',
     name: 'Bootstrap',
-    icon: require('../../assets/statics/icons/icon-bootstrap.png'),
+    icon: require('../../assets/statics/icons/icon-bootstrap_1.svg'),
   },
   {
     id: 'id_icon-vsc',
     name: 'VS Code',
-    icon: require('../../assets/statics/icons/icon-vsc.svg'),
+    icon: require('../../assets/statics/icons/icon-vsc_1.svg'),
   },
   {
     id: 'id_icon-npm',
     name: 'npm',
-    icon: require('../../assets/statics/icons/icon-npm.png'),
+    icon: require('../../assets/statics/icons/icon-npm_1.svg'),
   },
   {
     id: 'id_icon-git',
@@ -121,9 +121,14 @@ export const Technologies = [
     icon: require('../../assets/statics/icons/icon-postman.svg'),
   },
   {
+    id: 'id_icon-sql',
+    name: 'SQL',
+    icon: require('../../assets/statics/icons/icon-sql_1.svg'),
+  },
+  {
     id: 'id_icon-ai',
     name: 'Illustrator',
-    icon: require('../../assets/statics/icons/icon-illustrator.png'),
+    icon: require('../../assets/statics/icons/icon-illustrator_1.svg'),
   },
   {
     id: 'id_icon-figma',
@@ -142,8 +147,7 @@ export const Hobbies = [
       'desde muy chico apasionado con los deportes y tambien por los videojuegos, suelo jugar mas juegos de PC, no tanto en consola y me gusta mucho jugar al ajedrez',
     bodyTextEnglish:
       'since very young I am passionate about sports and also about video games, I usually play more PC games, not so much on the console and I like very much to play chess',
-    image:
-      'https://cdn.pixabay.com/photo/2016/02/22/09/44/chess-1215079_960_720.jpg',
+    image: require('../../assets/statics/image/gaming.jpg'),
     footerText: 'Isnt About Gaming, its About Passion',
   },
   {
@@ -153,8 +157,7 @@ export const Hobbies = [
       'Ridículamente fanático del cine y mas que todo de la Ciencia Ficción, de esos que disfruta el cine en todo su esplendor. Trato de en mi tiempo libre ver alguna Película o Serie ',
     bodyTextEnglish:
       'Ridiculously fan about movies and mostly about SciFi, the kind that enjoys movies in all their splendor. I try in my free time to see some film or series',
-    image:
-      'https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655__340.jpg',
+    image: require('../../assets/statics/image/8728.jpg'),
     footerText: '"Im Gonna Make Him An Offer He Cant Refuse." - Vito Corleone',
   },
   {
@@ -164,7 +167,7 @@ export const Hobbies = [
       'En mis comienzos formales con Mindhub y luego con Platzi, Gran plataforma que me brinda la mejor opcion para volverme profesional.',
     bodyTextEnglish:
       'In my formal beginnings with Mindhub and then with Platzi, Great platform that gives me the best option to become a professional.',
-    image: require('../../assets/statics/image/platzi_2.webp'),
+    image: require('../../assets/statics/image/img_platzi_1.jpg'),
     footerText: 'NEVER STOP LEARNING!!',
   },
 ];
@@ -202,7 +205,7 @@ export const Educations = [
     title: 'Autodidacta',
     text: 'Carrera Frontend con Vue y React',
     footerText: 'Desde 2018 a la Actualidad',
-    img: require('../../assets/statics/image/platzi_7.png'),
+    img: require('../../assets/statics/image/platzi_7.jpg'),
     logo: require('../../assets/statics/icons/web.svg'),
     web: 'https://platzi.com/',
 
@@ -257,12 +260,12 @@ export const Projects = [
     desc: 'Proyecto Con Redux',
     repo: '',
     deploy: '',
-    tech: require('../../assets/statics/icons/icon-react.png'),
+    tech: require('../../assets/statics/icons/icon-react_1.svg'),
     detalle_1: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_2: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_3: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_4: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
-    preview: require('../../assets/statics/image/rooms.png'),
+    preview: require('../../assets/statics/image/proj_vue_exchange_1.jpg'),
   },
   {
     id: 'id_projects-2',
@@ -271,7 +274,7 @@ export const Projects = [
     desc: 'Proyecto Redux/Router',
     repo: '',
     deploy: '',
-    tech: require('../../assets/statics/icons/icon-react.png'),
+    tech: require('../../assets/statics/icons/icon-react_1.svg'),
     detalle_1: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_2: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_3: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
@@ -285,7 +288,7 @@ export const Projects = [
     desc: 'React Router, Redux, Webpac',
     repo: '',
     deploy: '',
-    tech: require('../../assets/statics/icons/icon-react.png'),
+    tech: require('../../assets/statics/icons/icon-react_1.svg'),
     detalle_1: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_2: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_3: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
@@ -299,7 +302,7 @@ export const Projects = [
     desc: 'Proyecto Academico inciando con estudios en Vuejs',
     repo: '',
     deploy: '',
-    tech: require('../../assets/statics/icons/icon-vue-js.png'),
+    tech: require('../../assets/statics/icons/icon-vue_1.svg'),
     detalle_1: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_2: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',
     detalle_3: 'lHook,. VUEX, ROUTER, bla bla bla bla akjsdhashj',

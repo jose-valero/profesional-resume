@@ -3,7 +3,8 @@
 .header__container {
   background-color: $danger-color;
   box-shadow: 0 0.25rem 0.5rem rgba(52, 58, 64, 0.5);
-  color: $light-gray;
+  color: $light-blue;
+  @include textResponsive;
 }
 
 .header__content {
@@ -14,7 +15,6 @@
   text-decoration: none;
   color: #eeeedd;
   margin-right: 1rem;
-  font-size: 18px;
 }
 .header__brand:hover {
   text-decoration: none;
@@ -26,7 +26,6 @@
   color: #eeeedd;
   margin-right: 1.5rem;
   margin-left: 3rem;
-  font-size: 16px;
 }
 
 .header__item:hover {

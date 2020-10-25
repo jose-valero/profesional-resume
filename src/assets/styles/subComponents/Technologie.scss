@@ -40,13 +40,10 @@
 }
 
 .about__tech-names {
+  @include textResponsive;
   margin-top: 4px;
-  font-size: 0.75rem;
   text-align: center;
-  color: $light-green;
-  @include breakpoint(laptop) {
-    font-size: 1rem;
-  }
+  color: $dark-color;
 }
 
 .about__tech-logo {

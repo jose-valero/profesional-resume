@@ -6,7 +6,6 @@
 }
 
 .about__hero {
-  background-image: url('../../statics/image/hero_1.jpg');
   @include hero;
 }
 
@@ -23,14 +22,11 @@
 .about__content {
   padding: 5%;
   margin: 0;
-  color: #eeeedd;
 }
 
-.about__content-text,
-p {
-  font-size: 1rem;
+.about__content-text {
+  color: $mid-blue;
+  font-weight: 600;
+  @include textResponsive;
   text-align: center;
-  @include breakpoint(laptop) {
-    font-size: 2rem;
-  }
 }

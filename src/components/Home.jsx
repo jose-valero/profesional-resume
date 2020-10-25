@@ -9,18 +9,34 @@ import '../assets/styles/App.scss';
 import '../assets/styles/components/Home.scss';
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { imageStatus: 'loading' };
+  }
+  handleImageLoaded() {
+    this.setState({ imageStatus: 'loaded' });
+  }
+
+  handleImageErrored() {
+    this.setState({ imageStatus: 'failed to load' });
+  }
   render() {
     const langReducer = this.props.langReducer;
     if (langReducer === 'ES') {
       return (
         <>
-          <div className='home__container'>
+          <div
+            className='home__container'
+            onLoad={this.handleImageLoaded.bind(this)}
+          >
             <div className='home__content'>
               <h1 className='home__content-title'>Hola, Soy José Valero</h1>
               <img
                 className='home__fotoPerfil'
                 src={fotoPerfil}
                 alt='foto-perfil'
+                rel='preload'
+                as='image'
               />
 
               <div className='home__social'>
@@ -32,9 +48,9 @@ class Home extends React.Component {
                 Estudiante y <b>Frontend Developer</b> viviendo en Buenos Aires
                 Argentina, A continuacion vera un poco mi portafolio y
                 aprenderan algunas cosas acerca de mi, y tambien demostrando un
-                poco mis habilidades con diferentes tecnologias{' '}
+                poco mis habilidades con diferentes tecnologias
                 <strong>
-                  <Link to='/about'>Conóceme</Link>
+                  <Link to='/about'> Conóceme</Link>
                 </strong>
               </h3>
             </div>
@@ -44,28 +60,34 @@ class Home extends React.Component {
     } else {
       return (
         <>
-          <div className=' page home__container'>
+          <div
+            className='home__container'
+            onLoad={this.handleImageLoaded.bind(this)}
+          >
             <div className='home__content'>
-              <h1 className='home__content-tittle text-center mb-5 pb-5'>
-                Hi, I'm José Valero
-              </h1>
+              <h1 className='home__content-title'>H1, I Am Jose Valero</h1>
               <img
                 className='home__fotoPerfil'
                 src={fotoPerfil}
                 alt='foto-perfil'
+                rel='preload'
+                as='image'
               />
 
-              <h3 className='home__content-text text-center'>
-                Student and <b>Frontend Developer</b> living in Buenos Aires
-                Argentina, Below you will see a little bit of my portfolio and
-                learn some things about me, Page created from a Frontend for
-                programmers and Recruiters
-              </h3>
-              <div className='home__social d-flex justify-content-center'>
+              <div className='home__social'>
                 {Personal_Social.map((rs) => (
                   <Social key={rs.id} {...rs} />
                 ))}
               </div>
+              <h3 className='home__content-text'>
+                Student and <b>Frontend Developer</b> living in Buenos Aires
+                Argentina, Below you will see a little bit of my portfolio and
+                learn some things about me, Page created from a Frontend for
+                programmers and Recruiters
+                <strong>
+                  <Link to='/about'> Know more About me</Link>
+                </strong>
+              </h3>
             </div>
           </div>
         </>
