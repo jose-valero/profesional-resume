@@ -88,7 +88,7 @@ class Header extends React.Component {
             className='header__content'
           >
             <Nav className='mx-auto'>
-              <Link className='effect slide-up header__item' to='/About'>
+              <Link className='effect slide-up header__item' to='/about'>
                 About me
               </Link>
               <Link className='effect slide-up header__item' to='/education'>
