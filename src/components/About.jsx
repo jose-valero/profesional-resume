@@ -88,7 +88,7 @@ class About extends React.Component {
         <>
           <div className='about__container'>
             <div className='about__hero'>
-              <h1>Conoceme</h1>
+              <h1>About me</h1>
             </div>
             <div
               className='about__content-fade'
