@@ -13,10 +13,15 @@ const Portafolio = () => {
     <>
       <div className='protafolio__container'>
         <div className='portafolio__hero'>
-          <h1>Projectos </h1>
+          <h1>Proyectos </h1>
         </div>
         <div>
-          <h1 className="portafolio__hello-world display-3">Hello World!</h1>
+          <h1 className='portafolio__hello-world display-3'>
+            Hello World!
+            <span role='img' aria-label=''>
+              👾
+            </span>
+          </h1>
         </div>
         <div
           className='portafolio__content'

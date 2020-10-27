@@ -5,8 +5,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Project = ({
-  desc,
-  date,
+  title,
+  deployIcon,
+  deployURL,
+  repoIcon,
+  repoURL,
   name,
   tech,
   detalle_1,
@@ -14,6 +17,7 @@ const Project = ({
   detalle_3,
   detalle_4,
   preview,
+  desc,
 }) => {
   AOS.init();
 
@@ -28,10 +32,11 @@ const Project = ({
             <div className='card__side card__side--back'>
               <div className='card__cover'>
                 <h4 className='card__heading'>
-                  <span className='card__heading-span'>Puntos Relevantes</span>
+                  <span className='card__heading-span'>{name}</span>
                 </h4>
               </div>
               <div className='card__details'>
+                <p className='card__desc--back'>{desc}</p>
                 <ul>
                   <li>{detalle_1}</li>
                   <li>{detalle_2}</li>
@@ -46,28 +51,30 @@ const Project = ({
                 style={{ backgroundImage: `url(${preview})` }}
               >
                 <div className='card__theme'>
-                  <div className='card__theme-box'>
-                    <p className='card__subject'>{name}</p>
-                    <p className='card__title'>{desc}</p>
-                  </div>
+                  <div className='card__theme-box'></div>
                 </div>
               </div>
             </>
-            ,
           </div>
         </div>
       </div>
       <div className='col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center'>
         <img src={tech} className='img-fluid' alt='asd' data-aos='zoom-out' />
       </div>
+
       <div className='col-10 col-md-5 order-1 order-md-3 py-3 timeline-date'>
-        <div className='d-block'>
-          <small>
-            <small>{date}</small>
-            {/* <img src={tech} alt='' />
-            <img src={tech} alt='' /> */}
-          </small>
-          {/* <img src={preview} alt='..' className='projects__preview' /> */}
+        <h3 className=''>{title}</h3>
+        <div className='icons__details'>
+          <a href={repoURL} target='_blank' rel='noopener noreferrer'>
+            <img src={repoIcon} alt='' />
+          </a>
+          <a
+            href={deployURL ? deployURL : 'notFound'}
+            target={deployURL ? '_blank' : '_self'}
+            rel='noopener noreferrer'
+          >
+            <img src={deployIcon} alt='' />
+          </a>
         </div>
       </div>
     </div>

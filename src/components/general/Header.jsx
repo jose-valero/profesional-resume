@@ -54,7 +54,7 @@ class Header extends React.Component {
                 Contactame
               </Link>
 
-              <Link className='effect slide-up header__item' to='/resume'>
+              <Link className='effect slide-up header__item' to='/resumen'>
                 <img src={download} alt='' />
               </Link>
             </Nav>
@@ -69,16 +69,16 @@ class Header extends React.Component {
           className='header__container '
           fixed='top'
         >
-          <div className='header__brand--left'>
+          <div className='d-flex'>
             <Link to='/' className='header__brand font-weight-bolder'>
               Home
             </Link>
             <Link to='#' onClick={() => this.props.lanSelect('ES')}>
-              <img src={argFlag} alt='' className='header__lang-img' />
+              <img src={argFlag} alt='' className='mx-1' />
             </Link>
 
             <Link to='#' onClick={() => this.props.lanSelect('EN')}>
-              <img src={usaFlag} alt='' className='header__lang-img' />
+              <img src={usaFlag} alt='' className='mx-1' />
             </Link>
           </div>
 
@@ -89,7 +89,7 @@ class Header extends React.Component {
           >
             <Nav className='mx-auto'>
               <Link className='effect slide-up header__item' to='/About'>
-                About
+                About me
               </Link>
               <Link className='effect slide-up header__item' to='/education'>
                 Education
@@ -98,10 +98,10 @@ class Header extends React.Component {
                 Portafolio
               </Link>
               <Link className='effect slide-up header__item' to='/contact'>
-                contact
+                Contact
               </Link>
 
-              <Link className='effect slide-up header__item' to='/resume'>
+              <Link className='effect slide-up header__item' to='/resumen'>
                 <img src={download} alt='' />
               </Link>
             </Nav>

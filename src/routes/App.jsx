@@ -5,9 +5,10 @@ import Contact from '../components/Contact';
 import Education from '../components/Education';
 import Portafolio from '../components/Portafolio';
 import Home from '../components/Home';
-import Game from '../components/Game';
 import Layout from '../container/Layout';
-import "../assets/styles/App.scss"
+import '../assets/styles/App.scss';
+import NotFound from '../components/general/NotFound';
+import Resumen from '../components/Resumen';
 
 const App = () => (
   <BrowserRouter>
@@ -18,7 +19,8 @@ const App = () => (
         <Route exact path='/education' component={Education} />
         <Route exact path='/portafolio' component={Portafolio} />
         <Route exact path='/contact' component={Contact} />
-        <Route exact path='/game' component={Game} />
+        <Route exact path='/resumen' component={Resumen} />
+        <Route path='/notFound' component={NotFound} />
       </Switch>
     </Layout>
   </BrowserRouter>

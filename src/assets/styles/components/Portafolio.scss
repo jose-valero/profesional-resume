@@ -16,10 +16,6 @@ html {
   }
 }
 
-body {
-  background-color: $mid-blue;
-}
-
 .portafolio__container {
   height: auto;
   width: 100%;
@@ -34,7 +30,7 @@ body {
   text-align: center;
   margin: 5rem 5rem 1rem 5rem;
   padding: 5rem 5rem 1rem 5rem;
-  color: $light-color;
+  color: $mid-blue;
 }
 //test
 
@@ -49,19 +45,22 @@ body {
 .timeline-nodes:nth-child(even) {
   flex-direction: row-reverse;
 }
-.timeline h3,
-.timeline p {
-  padding: 5px 15px;
-}
-.timeline h3 {
-  font-weight: lighter;
-  background: var(--blue);
-}
-.timeline p,
+// .timeline h3,
+// .timeline p {
+//   padding: 5px 15px;
+// }
+// .timeline h3 {
+//   font-weight: lighter;
+//   background: red !important
+// }
+
 .timeline small {
-  color: $light-color;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: $mid-blue;
   @include textResponsive;
 }
+
 .timeline::before {
   content: '';
   display: block;
@@ -69,7 +68,7 @@ body {
   top: 0;
   left: 50%;
   width: 0;
-  border-left: 5px solid $light-blue;
+  border-left: 5px solid $mid-blue;
   height: 100%;
   z-index: 1;
   transform: translateX(-50%);
@@ -80,12 +79,12 @@ body {
   border-radius: 0 0 10px 10px;
   // box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
 }
-.timeline-nodes:nth-child(odd) h3,
+
 .timeline-nodes:nth-child(odd) p {
   text-align: right;
 }
 .timeline-nodes:nth-child(odd) .timeline-date {
-  text-align: left;
+  text-align: center;
 }
 
 .timeline-nodes:nth-child(even) .timeline-date {
@@ -97,7 +96,7 @@ body {
   top: 5%;
   left: 100%;
   width: 0;
-  border-left: 10px solid red;
+  border-left: 10px solid $mid-blue;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
@@ -107,7 +106,7 @@ body {
   top: 5%;
   right: 100%;
   width: 0;
-  border-right: 10px solid yellow;
+  border-right: 10px solid $mid-blue;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
@@ -126,7 +125,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: $dark-color;
+  background-color: $light-blue;
   z-index: 1;
 }
 .timeline-image img {
@@ -150,22 +149,18 @@ body {
     top: 0;
     left: 4%;
     width: 0;
-    border-left: 6px solid $light-blue;
+    border-left: 6px solid $mid-blue;
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
   }
-  .timeline h3 {
-    font-size: 1.7rem;
-  }
-  .timeline p {
-    font-size: 14px;
-  }
+
+  //icon
   .timeline-image {
     position: absolute;
     left: 0%;
     top: 60px;
-    /*transform: translateX(-50%;);*/
+    transform: translateX(-50%);
   }
   .timeline-nodes:nth-child(odd) .timeline-content::after {
     content: '';
@@ -175,7 +170,7 @@ body {
     right: 100%;
     width: 0;
     border-left: 0;
-    border-right: 10px solid var(--blue);
+    border-right: 10px solid $mid-blue;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
@@ -185,12 +180,12 @@ body {
     top: 5%;
     right: 100%;
     width: 0;
-    border-right: 10px solid red;
+    border-right: 10px solid $mid-blue;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
   .timeline-nodes:nth-child(even) .timeline-date {
-    text-align: left;
+    text-align: center;
   }
   .timeline-image::before {
     width: 65px;
@@ -218,9 +213,7 @@ body {
 }
 
 //cards
-// Colors
 
-/* Reset */
 *,
 *::after,
 *::before {
@@ -266,7 +259,6 @@ body {
     box-shadow: 0 2rem 6rem rgba($color-black, 0.15);
 
     &--front {
-      // background-image: url('../../statics/image/card_bg_1.jpg');
       background-size: cover;
     }
 
@@ -292,7 +284,7 @@ body {
   }
 
   &__theme-box {
-    color: $color-white;
+    // color: $danger-color;
     margin-bottom: 8rem;
   }
 
@@ -332,13 +324,14 @@ body {
     width: 75%;
   }
 
+  //titulo
   &__heading-span {
     font-family: 'VT323', monospace;
-    font-size: 4.2rem;
-    font-weight: 300;
+    font-size: 2.2rem;
+    font-weight: 600;
     text-transform: uppercase;
     padding: 1rem 1.5rem;
-    color: $color-white;
+    color: $light-gray;
   }
 
   &__details {
@@ -351,7 +344,7 @@ body {
 
       li {
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         padding: 1rem;
 
         &:not(:last-child) {
@@ -399,6 +392,7 @@ body {
       width: 100%;
       padding: 5rem 4rem 1.5rem 4rem;
       text-align: right;
+      background-image: url('../../statics/image/hero-background.jpg');
     }
 
     &__theme-box {
@@ -414,4 +408,16 @@ body {
 .projects__preview {
   width: 330px;
   height: 450px;
+}
+
+.icons__details {
+  img {
+    margin-right: 2rem;
+    width: 10%;
+    height: 10%;
+  }
+}
+
+.card__desc--back {
+  font-size: 1.25rem;
 }

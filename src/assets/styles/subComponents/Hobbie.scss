@@ -85,37 +85,23 @@
 }
 
 .hobbie__footer-body.card-footer {
-  padding-top: 0.5rem !important;
-  line-height: 0.25rem !important;
-  height: 12%;
-  padding-left: 0.5rem !important;
-  padding-right: 0.15rem !important;
+  height: 10%;
   background: $danger-color !important;
   display: flex;
   align-items: center;
-  @include breakpoint(laptop) {
-    padding-top: 0.25rem !important;
-    line-height: 0.75rem !important;
-    height: 12.5%;
-    padding-left: 0.25rem !important;
-  }
-  @include breakpoint(mobile) {
-    padding-top: 0.5rem !important;
-    line-height: 0.75rem !important;
-    height: 8.5%;
-    padding-left: 0.25rem !important;
-  }
-
   small {
     margin: 0;
     padding: 0;
     color: $light-color;
-    font-size: 0.25rem;
-    @include breakpoint(tablet) {
-      font-size: 0.5rem;
+   
+    @include breakpoint(mobileonly) {
+      font-size: calc(1rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
     }
-    @include breakpoint(laptop) {
-      font-size: 0.75rem;
+    @include breakpoint(mobile) {
+      font-size: calc(1rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
+    }
+    @include breakpoint(tablet) {
+      font-size: calc(0.5rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
     }
   }
 }

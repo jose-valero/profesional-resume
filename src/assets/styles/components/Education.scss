@@ -19,11 +19,9 @@
 }
 
 .education__content-title {
-  h1 {
-    color: $light-blue;
-    border-bottom: 3px solid $wine;
-    @include subtitles;
-  }
+  color: $mid-blue;
+  border-bottom: 3px solid $wine;
+  @include subtitles;
 }
 
 //cards
@@ -48,7 +46,7 @@
 
   h1 {
     border-bottom: 3px solid $wine;
-    color: $light-blue;
+    color: $mid-blue;
     width: 100%;
     @include subtitles;
   }

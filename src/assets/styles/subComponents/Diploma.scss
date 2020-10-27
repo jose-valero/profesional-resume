@@ -3,28 +3,31 @@
 .diploma__container-item {
   padding-top: 3rem;
   h2 {
-    color: $light-blue;
+    color: $mid-blue;
     padding: 0 0 0.25rem 0;
     margin: 0 12.5% 0 12.5%;
     text-align: center;
-    font-size: calc(1rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
+    font-size: calc(1.25rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
     border-bottom: 2px solid $danger-color;
     z-index: 0;
     width: 75%;
     align-items: center;
   }
   img {
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     justify-content: center;
     width: 80%;
     height: auto;
     transition: transform 0.5s ease;
     position: relative;
     z-index: 1;
+    @include breakpoint(mobileonly) {
+      width: 60%;
+    }
   }
   img:hover {
     transform: scale(1.5);
-    z-index: 2;
+    z-index: 99;
   }
 }
 //
