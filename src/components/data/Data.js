@@ -137,16 +137,14 @@ export const Technologies = [
   },
 ];
 
-export const Social = [{}];
-
 export const Hobbies = [
   {
     id: 'id_hobbie-gaming',
     title: 'Gaming',
     bodyText:
-      'desde muy chico apasionado con los deportes y también por los videojuegos, suelo jugar más juegos de PC, no tanto en consola y me gusta mucho jugar al ajedrez',
+      'desde muy chico apasionado con los deportes y también por los videojuegos, Algunos juegos de PC, otros de mesa como Ajedrez',
     bodyTextEnglish:
-      'since very young I am passionate about sports and also about video games, I usually play more PC games, not so much on the console and I like very much to play chess',
+      'since very young I am passionate about sports and also about video games, I usually play some PC games, and im a Amateur chess player',
     image: require('../../assets/statics/image/gaming.jpg'),
     footerText: 'Isnt About Gaming, its About Passion',
     footerTextES: 'No es sobre el juego, es acerca de la pasión',

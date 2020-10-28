@@ -35,11 +35,11 @@
 }
 
 .navbar-toggler-icon {
-  color: $dark-color;
+  color: $light-color !important;
  
 }
 
-.navbar-light, .navbar-toggler {
-  border: 1px solid $dark-color !important;
+.navbar-toggler {
+  border: 2px solid $light-color !important;
 
 }
