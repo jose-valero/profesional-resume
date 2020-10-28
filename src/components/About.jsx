@@ -24,7 +24,7 @@ class About extends React.Component {
       return (
         <div className='about__container'>
           <div className='about__hero'>
-            <h1>Conoceme</h1>
+            <h1>Conóceme</h1>
           </div>
           <div
             className='about__content-fade'
@@ -42,9 +42,9 @@ class About extends React.Component {
               <p className='about__content-text'>
                 Desde ya un año me comprometí a realizar un cambio rotundo hacia
                 el mundo de la Programación y Desarrollo, Me considero un asiduo
-                estudiante y un profesional comprometido.. apasionado con nuevas
+                estudiante y un profesional comprometido. apasionado con nuevas
                 tecnologías y con miras a convertirme en FullStack Developer, y
-                por que no? Algún día dirigir grandes proyectos.
+                por qué no? Algún día dirigir grandes proyectos.
               </p>
 
               <div className='about__content-skills row'>
@@ -65,7 +65,7 @@ class About extends React.Component {
                 <div className='col-12 col-md-6 col-lg-6 my-2'>
                   <div className='about__tech-container'>
                     <p className='about__tech-title'>
-                      Tecnologias y herramientas{' '}
+                      Tecnologías y herramientas{' '}
                       <span role='img' aria-label=''>
                         📣
                       </span>
@@ -125,7 +125,7 @@ class About extends React.Component {
                 <div className='col-12 col-md-6 col-lg-6 my-2'>
                   <div className='about__tech-container'>
                     <p className='about__tech-title'>
-                      Tecnologias y herramientas
+                      Techs and Tools
                       <span role='img' aria-label=''>
                         📣
                       </span>

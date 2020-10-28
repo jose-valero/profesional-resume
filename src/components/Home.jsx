@@ -46,9 +46,9 @@ class Home extends React.Component {
               </div>
               <h3 className='home__content-text'>
                 Estudiante y <b>Frontend Developer</b> viviendo en Buenos Aires
-                Argentina, A continuacion vera un poco mi portafolio y
-                aprenderan algunas cosas acerca de mi, y tambien demostrando un
-                poco mis habilidades con diferentes tecnologias
+                Argentina, A continuación, vera un poco mi portafolio y
+                aprenderán algunas cosas acerca de mí, y también demostrando un
+                poco mis habilidades con diferentes tecnologías
                 <strong>
                   <Link to='/about'> Conóceme</Link>
                 </strong>

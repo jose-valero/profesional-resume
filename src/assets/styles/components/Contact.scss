@@ -4,6 +4,11 @@
   @include hero;
 }
 
+.contact__container--form  > h1 {
+  color: $light-green;
+  
+}
+
 .contact__container--form {
   height: 100%;
   display: flex;

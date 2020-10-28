@@ -49,10 +49,11 @@ html {
 // .timeline p {
 //   padding: 5px 15px;
 // }
-// .timeline h3 {
-//   font-weight: lighter;
-//   background: red !important
-// }
+.timeline h3 {
+  font-weight: lighter;
+
+  color: $light-blue
+}
 
 .timeline small {
   margin-left: 20%;
@@ -68,7 +69,7 @@ html {
   top: 0;
   left: 50%;
   width: 0;
-  border-left: 5px solid $mid-blue;
+  border-left: 5px solid $light-blue;
   height: 100%;
   z-index: 1;
   transform: translateX(-50%);
@@ -96,7 +97,7 @@ html {
   top: 5%;
   left: 100%;
   width: 0;
-  border-left: 10px solid $mid-blue;
+  border-left: 10px solid $light-blue;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
@@ -106,7 +107,7 @@ html {
   top: 5%;
   right: 100%;
   width: 0;
-  border-right: 10px solid $mid-blue;
+  border-right: 10px solid $light-blue;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
@@ -149,7 +150,7 @@ html {
     top: 0;
     left: 4%;
     width: 0;
-    border-left: 6px solid $mid-blue;
+    border-left: 6px solid $light-blue;
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
@@ -170,7 +171,7 @@ html {
     right: 100%;
     width: 0;
     border-left: 0;
-    border-right: 10px solid $mid-blue;
+    border-right: 10px solid $light-blue;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
@@ -180,7 +181,7 @@ html {
     top: 5%;
     right: 100%;
     width: 0;
-    border-right: 10px solid $mid-blue;
+    border-right: 10px solid $light-blue;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }

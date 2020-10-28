@@ -8,7 +8,7 @@ import '../../assets/styles/components/Header.scss';
 
 import download from '../../assets/statics/icons/pdf-file.svg';
 import usaFlag from '../../assets/statics/icons/usa_1.svg';
-import argFlag from '../../assets/statics/icons/arg_1.svg';
+import argFlag from '../../assets/statics/icons/spain.svg';
 
 class Header extends React.Component {
   render() {
@@ -37,7 +37,7 @@ class Header extends React.Component {
 
           <Navbar.Toggle aria-controls='responsive-navbar-nav' className='' />
           <Navbar.Collapse
-            id='responsive-navbar-nav'
+            id='responsive-navbar-nav '
             className='header__content'
           >
             <Nav className='mx-auto'>
@@ -58,7 +58,7 @@ class Header extends React.Component {
               </NavLink>
 
               <NavLink className='effect slide-up header__item' to='/resumen'>
-                <img src={download} alt='' />
+                CV
               </NavLink>
             </Nav>
           </Navbar.Collapse>

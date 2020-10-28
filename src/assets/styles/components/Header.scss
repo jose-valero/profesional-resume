@@ -34,4 +34,12 @@
   font-weight: 700;
 }
 
-//  test
+.navbar-toggler-icon {
+  color: $dark-color;
+ 
+}
+
+.navbar-light, .navbar-toggler {
+  border: 1px solid $dark-color !important;
+
+}

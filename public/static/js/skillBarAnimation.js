@@ -12,7 +12,7 @@ $(document).on('scroll', function () {
       {
         width: value + '%',
       },
-      3000,
+      5000,
       function () {
         $('.speech-bubble').fadeIn();
       }

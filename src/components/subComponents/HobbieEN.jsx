@@ -9,12 +9,12 @@ const HobbieEN = ({ title, bodyTextEnglish, image, footerText }) => {
   return (
     <Card className='hobbie__cards' data-aos='zoom-in'>
       <Card.Img
+        className='hobbies__image rounded mx-auto d-block'
         variant='top'
         src={image}
-        className='hobbies__image rounded mx-auto d-block'
       />
       <Card.Body className='hobbie__card-body'>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className='hobbie__card-title'>{title}</Card.Title>
         <Card.Text className='hobbie__body-text'>{bodyTextEnglish}</Card.Text>
       </Card.Body>
       <Card.Footer className='hobbie__footer-body'>

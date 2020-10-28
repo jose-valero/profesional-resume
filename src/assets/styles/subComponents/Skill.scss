@@ -5,10 +5,11 @@
 }
 .about__title-skills,
 .about__tech-title {
-  color: $dark-color;
-  border-bottom: 1px solid $wine;
+  @include subtitles;
+  text-align: center !important;
+  border-bottom: 1px solid $light-blue;
   font-weight: 600;
-  font-size: 1.75rem;
+  // font-size: 1.75rem;
   text-align: center;
   @include breakpoint(tablet) {
     border-bottom: 0;
@@ -28,7 +29,7 @@
   @include textResponsive;
   text-transform: uppercase;
   margin-bottom: 0.25em;
-  color:$dark-color;
+  color:$light-blue;
 }
 .speech-bubble {
   font-size: 0.75em;
@@ -91,7 +92,7 @@
 .rs,
 .wp,
 .wq {
-  background: #ff2255;
+  background: $danger-color;
   color: white;
 }
 

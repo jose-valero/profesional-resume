@@ -9,17 +9,15 @@ function NotFound() {
     <>
       <div className='notFound__container'>
         <div className='notFound__container'>
-          <div className='notFound__row'>
-            <div className='notFound__content notFound__col '>
+          <div className='row'>
+            <div className='notFound__content col '>
               <h1 className='notFound__title'>Ooops.. Pagina no encontrada</h1>
               <h1 className='notFound__content-text'>Intente luego</h1>
               <Link to='/'>
-                <button className='notFound__button '>
-                  Go Home
-                </button>
+                <button className='notFound__button '>Go Home</button>
               </Link>
             </div>
-            <div className='notFound__content notFound__col'>
+            <div className='notFound__content col'>
               <img
                 className='notFound__img'
                 src={notFoundImg}

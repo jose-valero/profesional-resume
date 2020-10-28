@@ -19,7 +19,7 @@ $title-font: 'Source Code Pro', monospace;
 $app-font: 'Source Code Pro', monospace;
 $code-font: 'Press Start 2P', cursive;
 $theme-font: 'Muli', sans-serif;
-$main-color: rgb(79, 87, 170);
+$main-color: rgb(27, 28, 31);
 //paleta de colores
 //option #1
 $dark-color: rgb(68, 68, 68);
@@ -133,16 +133,9 @@ $color-white: #fff;
 }
 
 @mixin subtitles {
+  color: $light-green;
   font-size: calc(2rem + (24 - 32) * (100vw - 576px) / (2200 - 576));
-  @include breakpoint(mobileonly) {
-    text-align: center;
-  }
-  @include breakpoint(mobile) {
-    text-align: center;
-  }
-  @include breakpoint(desktop) {
-    text-align: left;
-  }
+  text-align: center;
 }
 
 @mixin hero {

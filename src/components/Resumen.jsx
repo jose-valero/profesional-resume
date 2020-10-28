@@ -27,7 +27,7 @@ class Resumen extends React.Component {
             download='cv_jose_valero.pdf'
           >
             <h1>
-              Tu dispositvo no puede Visualizar el Documento, dale <b>click</b>{' '}
+              Tu dispositvo no puede Visualizar el Documento, dale <b>click </b>
               para descargarlo
             </h1>
           </a>

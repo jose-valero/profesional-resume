@@ -19,16 +19,15 @@
 }
 
 .education__content-title {
-  color: $mid-blue;
-  border-bottom: 3px solid $wine;
-  @include subtitles;
+  color: $light-blue;
+  border-bottom: 3px solid $danger-color;
 }
 
 //cards
 .education__row-1 {
   flex-wrap: wrap;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: 5%;
+
   display: flex;
   justify-content: center;
 }
@@ -46,7 +45,7 @@
 
   h1 {
     border-bottom: 3px solid $wine;
-    color: $mid-blue;
+    color: $light-blue;
     width: 100%;
     @include subtitles;
   }
