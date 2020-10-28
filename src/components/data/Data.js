@@ -303,7 +303,7 @@ export const Projects = [
     desc:
       ' PlatziVideos App de Reproductor de Videos, donde podemos Agregar o Quitar videos a la sección de favoritos, Reproductor interno en la UI, pantalla de Login y Register ',
     repoURL: 'https://github.com/jose-valero/platzi-videos',
-    deployURL: '',
+    deployURL: 'https://videos-valero.netlify.app/',
     detalle_1: 'Manejo de Estados iniciales',
     detalle_2: 'Configuración de webpack',
     detalle_3: 'Componentes Asíncronos y cargados de forma dinámica',
