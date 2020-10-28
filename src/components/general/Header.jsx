@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Navbar, Nav } from 'react-bootstrap/';
 
@@ -23,9 +23,9 @@ class Header extends React.Component {
           fixed='top'
         >
           <div className='d-flex'>
-            <Link to='/' className='header__brand font-weight-bolder'>
+            <NavLink to='/' className='header__brand font-weight-bolder'>
               Home
-            </Link>
+            </NavLink>
             <Link to='#' onClick={() => this.props.lanSelect('ES')}>
               <img src={argFlag} alt='' className='mx-1' />
             </Link>
@@ -41,22 +41,25 @@ class Header extends React.Component {
             className='header__content'
           >
             <Nav className='mx-auto'>
-              <Link className='effect slide-up header__item' to='/About'>
+              <NavLink className='effect slide-up header__item' to='/about'>
                 Conoceme
-              </Link>
-              <Link className='effect slide-up header__item' to='/education'>
+              </NavLink>
+              <NavLink className='effect slide-up header__item' to='/education'>
                 Educacion
-              </Link>
-              <Link className='effect slide-up header__item' to='/portafolio'>
+              </NavLink>
+              <NavLink
+                className='effect slide-up header__item'
+                to='/portafolio'
+              >
                 Portafolio
-              </Link>
-              <Link className='effect slide-up header__item' to='/contact'>
+              </NavLink>
+              <NavLink className='effect slide-up header__item' to='/contact'>
                 Contactame
-              </Link>
+              </NavLink>
 
-              <Link className='effect slide-up header__item' to='/resumen'>
+              <NavLink className='effect slide-up header__item' to='/resumen'>
                 <img src={download} alt='' />
-              </Link>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

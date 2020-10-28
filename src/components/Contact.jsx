@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div className='form__container'>
       <div className='contact__hero'>
         <h1>Lets Talk</h1>
       </div>
@@ -74,7 +74,7 @@ const Contact = () => {
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 };
 

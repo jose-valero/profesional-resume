@@ -146,7 +146,7 @@ $color-white: #fff;
 }
 
 @mixin hero {
-  background-image: url("../statics/image/hero-background.jpg");
+  background-image: url('../statics/image/hero-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -171,4 +171,3 @@ $color-white: #fff;
 
   text-align: center;
 }
-

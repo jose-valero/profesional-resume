@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Projects } from '../data/Data';
+
 import '../../assets/styles/components/Portafolio.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
