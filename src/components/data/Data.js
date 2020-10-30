@@ -260,6 +260,13 @@ export const Certifications = [
     link:
       'https://platzi.com/@jose-miguel-valero-reyes/curso/1613-redux/diploma/detalle/',
   },
+  {
+    id: 'id_cert-react_5',
+    name: 'React Router',
+    diploma: require('../../assets/statics/docs/diploma-react-router.png'),
+    link:
+      'https://platzi.com/@jose-miguel-valero-reyes/curso/1342-react-router/diploma/detalle/',
+  },
 ];
 
 export const Projects = [
