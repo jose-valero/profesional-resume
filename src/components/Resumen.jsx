@@ -14,7 +14,7 @@ class Resumen extends React.Component {
     return (
       <div className='resumen__container'>
         <object
-          data={require('../assets/statics/docs/dev_jose_valero.pdf')}
+          data={require('../assets/statics/docs/cv_valero_rev2.1.pdf')}
           type='application/pdf'
           width='100%'
           height='100%'
@@ -22,7 +22,7 @@ class Resumen extends React.Component {
           aria-label=''
         >
           <a
-            href={require('../assets/statics/docs/dev_jose_valero.pdf')}
+            href={require('../assets/statics/docs/cv_valero_rev2.1.pdf')}
             id='linkDownloadPDF'
             download='cv_jose_valero.pdf'
           >
